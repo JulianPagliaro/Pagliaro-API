@@ -1,0 +1,51 @@
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Compilados
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+
+## Paquetes
+*.nupkg
+*.snupkg
+*.nuspec
+*.nuproj
+packages/
+*.dll
+*.exe
+*.pdb
+
+## Archivos temporales
+*.tmp
+*.temp
+*.log
+*.cache
+
+## Archivos de configuración locales
+launchSettings.json
+appsettings.Development.json
+
+## Archivos de respaldo
+*.bak
+*.old
+*.orig
+
+## Test / Coverage
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+## Archivos de IDEs
+.idea/
+*.iml
+
+## Otros
+*.dbmdl
+*.jfm

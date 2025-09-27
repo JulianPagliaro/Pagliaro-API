@@ -1,5 +1,5 @@
 
-namespace Solution
+namespace GameStore
 {
     public class Program
     {
