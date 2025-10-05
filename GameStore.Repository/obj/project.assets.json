@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "GameStore.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GameStore.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GameStore.Abstractions.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "GameStore.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../GameStore.Abstractions/GameStore.Abstractions.csproj",
+      "msbuildProject": "../GameStore.Abstractions/GameStore.Abstractions.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "GameStore.Abstractions >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Redmo\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Instituto\\EDI 3 API\\GameStore.Abstractions\\GameStore.Abstractions.csproj": {
+              "projectPath": "C:\\Instituto\\EDI 3 API\\GameStore.Abstractions\\GameStore.Abstractions.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

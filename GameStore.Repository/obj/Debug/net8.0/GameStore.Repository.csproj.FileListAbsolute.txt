@@ -1,0 +1,16 @@
+C:\Instituto\EDI 3 API\GameStore.Repository\bin\Debug\net8.0\GameStore.Repository.deps.json
+C:\Instituto\EDI 3 API\GameStore.Repository\bin\Debug\net8.0\GameStore.Repository.dll
+C:\Instituto\EDI 3 API\GameStore.Repository\bin\Debug\net8.0\GameStore.Repository.pdb
+C:\Instituto\EDI 3 API\GameStore.Repository\bin\Debug\net8.0\GameStore.Abstractions.dll
+C:\Instituto\EDI 3 API\GameStore.Repository\bin\Debug\net8.0\GameStore.Abstractions.pdb
+C:\Instituto\EDI 3 API\GameStore.Repository\obj\Debug\net8.0\GameStore.Repository.csproj.AssemblyReference.cache
+C:\Instituto\EDI 3 API\GameStore.Repository\obj\Debug\net8.0\GameStore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Instituto\EDI 3 API\GameStore.Repository\obj\Debug\net8.0\GameStore.Repository.AssemblyInfoInputs.cache
+C:\Instituto\EDI 3 API\GameStore.Repository\obj\Debug\net8.0\GameStore.Repository.AssemblyInfo.cs
+C:\Instituto\EDI 3 API\GameStore.Repository\obj\Debug\net8.0\GameStore.Repository.csproj.CoreCompileInputs.cache
+C:\Instituto\EDI 3 API\GameStore.Repository\obj\Debug\net8.0\GameStore.Repository.sourcelink.json
+C:\Instituto\EDI 3 API\GameStore.Repository\obj\Debug\net8.0\GameStor.055EF2D3.Up2Date
+C:\Instituto\EDI 3 API\GameStore.Repository\obj\Debug\net8.0\GameStore.Repository.dll
+C:\Instituto\EDI 3 API\GameStore.Repository\obj\Debug\net8.0\refint\GameStore.Repository.dll
+C:\Instituto\EDI 3 API\GameStore.Repository\obj\Debug\net8.0\GameStore.Repository.pdb
+C:\Instituto\EDI 3 API\GameStore.Repository\obj\Debug\net8.0\ref\GameStore.Repository.dll

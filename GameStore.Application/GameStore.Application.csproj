@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GameStore.Abstractions\GameStore.Abstractions.csproj" />
+    <ProjectReference Include="..\GameStore.Repository\GameStore.Repository.csproj" />
+  </ItemGroup>
+
 </Project>

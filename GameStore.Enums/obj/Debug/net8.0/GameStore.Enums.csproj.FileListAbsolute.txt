@@ -1,0 +1,12 @@
+C:\Instituto\EDI 3 API\GameStore.Enums\bin\Debug\net8.0\GameStore.Enums.deps.json
+C:\Instituto\EDI 3 API\GameStore.Enums\bin\Debug\net8.0\GameStore.Enums.dll
+C:\Instituto\EDI 3 API\GameStore.Enums\bin\Debug\net8.0\GameStore.Enums.pdb
+C:\Instituto\EDI 3 API\GameStore.Enums\obj\Debug\net8.0\GameStore.Enums.GeneratedMSBuildEditorConfig.editorconfig
+C:\Instituto\EDI 3 API\GameStore.Enums\obj\Debug\net8.0\GameStore.Enums.AssemblyInfoInputs.cache
+C:\Instituto\EDI 3 API\GameStore.Enums\obj\Debug\net8.0\GameStore.Enums.AssemblyInfo.cs
+C:\Instituto\EDI 3 API\GameStore.Enums\obj\Debug\net8.0\GameStore.Enums.csproj.CoreCompileInputs.cache
+C:\Instituto\EDI 3 API\GameStore.Enums\obj\Debug\net8.0\GameStore.Enums.sourcelink.json
+C:\Instituto\EDI 3 API\GameStore.Enums\obj\Debug\net8.0\GameStore.Enums.dll
+C:\Instituto\EDI 3 API\GameStore.Enums\obj\Debug\net8.0\refint\GameStore.Enums.dll
+C:\Instituto\EDI 3 API\GameStore.Enums\obj\Debug\net8.0\GameStore.Enums.pdb
+C:\Instituto\EDI 3 API\GameStore.Enums\obj\Debug\net8.0\ref\GameStore.Enums.dll

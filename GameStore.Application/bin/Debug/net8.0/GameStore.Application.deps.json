@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "GameStore.Application/1.0.0": {
+        "dependencies": {
+          "GameStore.Abstractions": "1.0.0",
+          "GameStore.Repository": "1.0.0"
+        },
+        "runtime": {
+          "GameStore.Application.dll": {}
+        }
+      },
+      "GameStore.Abstractions/1.0.0": {
+        "runtime": {
+          "GameStore.Abstractions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "GameStore.Repository/1.0.0": {
+        "dependencies": {
+          "GameStore.Abstractions": "1.0.0"
+        },
+        "runtime": {
+          "GameStore.Repository.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GameStore.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GameStore.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GameStore.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

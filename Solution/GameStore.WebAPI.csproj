@@ -25,4 +25,11 @@
     <PackageReference Include="System.Security.Permissions" Version="9.0.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GameStore.Application\GameStore.Application.csproj" />
+    <ProjectReference Include="..\GameStore.DataAccess\GameStore.DataAccess.csproj" />
+    <ProjectReference Include="..\GameStore.Services\GameStore.Services.csproj" />
+    <ProjectReference Include="..\Solution.Entities\GameStore.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

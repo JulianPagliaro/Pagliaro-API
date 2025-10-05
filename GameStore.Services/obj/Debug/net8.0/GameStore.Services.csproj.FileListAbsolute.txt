@@ -1,0 +1,13 @@
+C:\Instituto\EDI 3 API\GameStore.Services\bin\Debug\net8.0\GameStore.Services.deps.json
+C:\Instituto\EDI 3 API\GameStore.Services\bin\Debug\net8.0\GameStore.Services.dll
+C:\Instituto\EDI 3 API\GameStore.Services\bin\Debug\net8.0\GameStore.Services.pdb
+C:\Instituto\EDI 3 API\GameStore.Services\obj\Debug\net8.0\GameStore.Services.csproj.AssemblyReference.cache
+C:\Instituto\EDI 3 API\GameStore.Services\obj\Debug\net8.0\GameStore.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Instituto\EDI 3 API\GameStore.Services\obj\Debug\net8.0\GameStore.Services.AssemblyInfoInputs.cache
+C:\Instituto\EDI 3 API\GameStore.Services\obj\Debug\net8.0\GameStore.Services.AssemblyInfo.cs
+C:\Instituto\EDI 3 API\GameStore.Services\obj\Debug\net8.0\GameStore.Services.csproj.CoreCompileInputs.cache
+C:\Instituto\EDI 3 API\GameStore.Services\obj\Debug\net8.0\GameStore.Services.sourcelink.json
+C:\Instituto\EDI 3 API\GameStore.Services\obj\Debug\net8.0\GameStore.Services.dll
+C:\Instituto\EDI 3 API\GameStore.Services\obj\Debug\net8.0\refint\GameStore.Services.dll
+C:\Instituto\EDI 3 API\GameStore.Services\obj\Debug\net8.0\GameStore.Services.pdb
+C:\Instituto\EDI 3 API\GameStore.Services\obj\Debug\net8.0\ref\GameStore.Services.dll

@@ -15,4 +15,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GameStore.Abstractions\GameStore.Abstractions.csproj" />
+    <ProjectReference Include="..\Solution.Entities\GameStore.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

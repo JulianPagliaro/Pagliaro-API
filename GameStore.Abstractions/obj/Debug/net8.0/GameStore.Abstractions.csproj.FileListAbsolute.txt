@@ -1,0 +1,12 @@
+C:\Instituto\EDI 3 API\GameStore.Abstractions\bin\Debug\net8.0\GameStore.Abstractions.deps.json
+C:\Instituto\EDI 3 API\GameStore.Abstractions\bin\Debug\net8.0\GameStore.Abstractions.dll
+C:\Instituto\EDI 3 API\GameStore.Abstractions\bin\Debug\net8.0\GameStore.Abstractions.pdb
+C:\Instituto\EDI 3 API\GameStore.Abstractions\obj\Debug\net8.0\GameStore.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Instituto\EDI 3 API\GameStore.Abstractions\obj\Debug\net8.0\GameStore.Abstractions.AssemblyInfoInputs.cache
+C:\Instituto\EDI 3 API\GameStore.Abstractions\obj\Debug\net8.0\GameStore.Abstractions.AssemblyInfo.cs
+C:\Instituto\EDI 3 API\GameStore.Abstractions\obj\Debug\net8.0\GameStore.Abstractions.csproj.CoreCompileInputs.cache
+C:\Instituto\EDI 3 API\GameStore.Abstractions\obj\Debug\net8.0\GameStore.Abstractions.sourcelink.json
+C:\Instituto\EDI 3 API\GameStore.Abstractions\obj\Debug\net8.0\GameStore.Abstractions.dll
+C:\Instituto\EDI 3 API\GameStore.Abstractions\obj\Debug\net8.0\refint\GameStore.Abstractions.dll
+C:\Instituto\EDI 3 API\GameStore.Abstractions\obj\Debug\net8.0\GameStore.Abstractions.pdb
+C:\Instituto\EDI 3 API\GameStore.Abstractions\obj\Debug\net8.0\ref\GameStore.Abstractions.dll
