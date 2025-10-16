@@ -1,4 +1,6 @@
-﻿using GameStore.Application;
+﻿using AutoMapper;
+using GameStore.Application;
+using GameStore.Application.Dtos.Editor;
 using GameStore.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,17 +12,19 @@ namespace GameStore.WebAPI.Controllers
     {
         private readonly ILogger<EditoresController> _logger;
         private readonly IApplication<Editor> _editor;
-        public EditoresController(ILogger<EditoresController> logger, IApplication<Editor> editor)
+        private readonly IMapper _mapper;
+        public EditoresController(ILogger<EditoresController> logger, IApplication<Editor> editor, IMapper mapper)
         {
             _logger = logger;
             _editor = editor;
+            _mapper = mapper;
         }
 
         [HttpGet]
         [Route("All")]
         public async Task<IActionResult> All()
         {
-            return Ok(_editor.GetAll());
+            return Ok(_mapper.Map<IList<EditorResponseDto>>(_editor.GetAll()));
         }
 
         [HttpGet]
@@ -36,20 +40,21 @@ namespace GameStore.WebAPI.Controllers
             {
                 return NotFound();
             }
-            return Ok(editor);
+            return Ok(_mapper.Map<EditorResponseDto>(editor));
         }
 
         [HttpPost]
-        public async Task<IActionResult> Crear(Editor editor)
+        public async Task<IActionResult> Crear(EditorRequestDto editorRequestDto)
         {
             if (!ModelState.IsValid)
             { return BadRequest(); }
+            var editor = _mapper.Map<Editor>(editorRequestDto);
             _editor.Save(editor);
             return Ok(editor.Id);
         }
 
         [HttpPut]
-        public async Task<IActionResult> Editar(int? Id, Editor editor)
+        public async Task<IActionResult> Editar(int? Id, EditorRequestDto editorRequestDto)
         {
             if (!Id.HasValue)
             {
@@ -66,11 +71,9 @@ namespace GameStore.WebAPI.Controllers
             {
                 return NotFound();
             }
-            editorBack.Nombre = editor.Nombre;
-            editorBack.Pais = editor.Pais;
-            editorBack.FechaFundacion = editor.FechaFundacion;
+            editorBack= _mapper.Map<Editor>(editorRequestDto);
             _editor.Save(editorBack);
-            return Ok(editorBack);
+            return Ok();
         }
 
         [HttpDelete]
