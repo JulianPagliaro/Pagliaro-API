@@ -3,10 +3,13 @@
   "WorkspaceRootPath": "C:\\Instituto\\EDI 3 API\\Solution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A904540-B14E-437B-ADB4-286D540A52FE}|..\\GameStore.Application\\GameStore.Application.csproj|c:\\instituto\\edi 3 api\\gamestore.application\\dtos\\juego\\juegoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DBD55FE-62BA-429F-BBA2-4ADC0B46D283}|..\\Solution.Entities\\GameStore.Entities.csproj|c:\\instituto\\edi 3 api\\solution.entities\\plataformaporjuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A904540-B14E-437B-ADB4-286D540A52FE}|..\\GameStore.Application\\GameStore.Application.csproj|c:\\instituto\\edi 3 api\\gamestore.application\\dtos\\juego\\juegorequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DBD55FE-62BA-429F-BBA2-4ADC0B46D283}|..\\Solution.Entities\\GameStore.Entities.csproj|c:\\instituto\\edi 3 api\\solution.entities\\generoporjuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DBD55FE-62BA-429F-BBA2-4ADC0B46D283}|..\\Solution.Entities\\GameStore.Entities.csproj|c:\\instituto\\edi 3 api\\solution.entities\\plataforma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -16,7 +19,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -44,28 +47,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "JuegoResponseDto.cs",
-              "DocumentMoniker": "C:\\Instituto\\EDI 3 API\\GameStore.Application\\Dtos\\Juego\\JuegoResponseDto.cs",
-              "RelativeDocumentMoniker": "..\\GameStore.Application\\Dtos\\Juego\\JuegoResponseDto.cs",
-              "ToolTip": "C:\\Instituto\\EDI 3 API\\GameStore.Application\\Dtos\\Juego\\JuegoResponseDto.cs",
-              "RelativeToolTip": "..\\GameStore.Application\\Dtos\\Juego\\JuegoResponseDto.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "GeneroPorJuego.cs",
+              "DocumentMoniker": "C:\\Instituto\\EDI 3 API\\Solution.Entities\\GeneroPorJuego.cs",
+              "RelativeDocumentMoniker": "..\\Solution.Entities\\GeneroPorJuego.cs",
+              "ToolTip": "C:\\Instituto\\EDI 3 API\\Solution.Entities\\GeneroPorJuego.cs",
+              "RelativeToolTip": "..\\Solution.Entities\\GeneroPorJuego.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T00:02:33.279Z",
+              "WhenOpened": "2025-10-16T00:11:46.207Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "JuegoRequestDto.cs",
-              "DocumentMoniker": "C:\\Instituto\\EDI 3 API\\GameStore.Application\\Dtos\\Juego\\JuegoRequestDto.cs",
-              "RelativeDocumentMoniker": "..\\GameStore.Application\\Dtos\\Juego\\JuegoRequestDto.cs",
-              "ToolTip": "C:\\Instituto\\EDI 3 API\\GameStore.Application\\Dtos\\Juego\\JuegoRequestDto.cs",
-              "RelativeToolTip": "..\\GameStore.Application\\Dtos\\Juego\\JuegoRequestDto.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABQAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "PlataformaPorJuego.cs",
+              "DocumentMoniker": "C:\\Instituto\\EDI 3 API\\Solution.Entities\\PlataformaPorJuego.cs",
+              "RelativeDocumentMoniker": "..\\Solution.Entities\\PlataformaPorJuego.cs",
+              "ToolTip": "C:\\Instituto\\EDI 3 API\\Solution.Entities\\PlataformaPorJuego.cs",
+              "RelativeToolTip": "..\\Solution.Entities\\PlataformaPorJuego.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T00:02:09.251Z",
+              "WhenOpened": "2025-10-16T00:11:43.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Plataforma.cs",
+              "DocumentMoniker": "C:\\Instituto\\EDI 3 API\\Solution.Entities\\Plataforma.cs",
+              "RelativeDocumentMoniker": "..\\Solution.Entities\\Plataforma.cs",
+              "ToolTip": "C:\\Instituto\\EDI 3 API\\Solution.Entities\\Plataforma.cs",
+              "RelativeToolTip": "..\\Solution.Entities\\Plataforma.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T00:08:08.615Z",
               "EditorCaption": ""
             }
           ]
