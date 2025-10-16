@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameStore.Entities
+namespace GameStore.Application.Dtos.Usuario
 {
-    public class Usuario
+    public class UsuarioRequestDto
     {
         public int Id { get; set; }
 
@@ -25,6 +25,6 @@ namespace GameStore.Entities
 
         public DateTime FechaRegistro { get; set; }
 
-        public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();
+
     }
 }
