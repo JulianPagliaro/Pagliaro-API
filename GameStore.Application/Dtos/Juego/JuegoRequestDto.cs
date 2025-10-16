@@ -1,10 +1,14 @@
-﻿using GameStore.Abstractions;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace GameStore.Entities
+namespace GameStore.Application.Dtos.Juego
 {
-    public class Juego : IEntidad
+    public class JuegoRequestDto
     {
         public int Id { get; set; }
         [StringLength(100)]
@@ -13,13 +17,8 @@ namespace GameStore.Entities
 
         [Column(TypeName = "decimal(18, 2)")]
         public decimal Precio { get; set; }
-        [ForeignKey(nameof(Estudio))]
         public int IdEstudio { get; set; }
-        public virtual Estudio Estudio { get; set; }
         public int IdGenero { get; set; }
-        public virtual Genero Genero { get; set; }
-        public virtual ICollection<EditorPorJuego> EditoresPorJuegos { get; set; }
-        public virtual ICollection<GeneroPorJuego> GenerosPorJuegos { get; set; }
+
     }
 }
-
