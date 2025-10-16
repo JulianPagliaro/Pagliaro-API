@@ -152,7 +152,13 @@ namespace GameStore.WebAPI.Migrations
                     b.Property<DateTime>("FechaPublicacion")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("GeneroId")
+                        .HasColumnType("int");
+
                     b.Property<int>("IdEstudio")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdGenero")
                         .HasColumnType("int");
 
                     b.Property<decimal>("Precio")
@@ -166,6 +172,8 @@ namespace GameStore.WebAPI.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("EditorId");
+
+                    b.HasIndex("GeneroId");
 
                     b.HasIndex("IdEstudio");
 
@@ -418,6 +426,12 @@ namespace GameStore.WebAPI.Migrations
                         .WithMany("Juegos")
                         .HasForeignKey("EditorId");
 
+                    b.HasOne("GameStore.Entities.Genero", "Genero")
+                        .WithMany()
+                        .HasForeignKey("GeneroId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("GameStore.Entities.Estudio", "Estudio")
                         .WithMany()
                         .HasForeignKey("IdEstudio")
@@ -425,6 +439,8 @@ namespace GameStore.WebAPI.Migrations
                         .IsRequired();
 
                     b.Navigation("Estudio");
+
+                    b.Navigation("Genero");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

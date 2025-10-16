@@ -16,6 +16,8 @@ namespace GameStore.Entities
         [ForeignKey(nameof(Estudio))]
         public int IdEstudio { get; set; }
         public virtual Estudio Estudio { get; set; }
+        public int IdGenero { get; set; }
+        public virtual Genero Genero { get; set; }
         public virtual ICollection<EditorPorJuego> EditoresPorJuegos { get; set; }
         public virtual ICollection<GeneroPorJuego> GenerosPorJuegos { get; set; }
     }
