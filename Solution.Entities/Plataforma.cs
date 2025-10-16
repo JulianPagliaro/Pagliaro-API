@@ -19,6 +19,8 @@ namespace GameStore.Entities
         public int Id { get; set; }
         [StringLength(100)]
         public string Nombre { get; set; }
+        public DateTime FechaLanzamiento { get; set; }
+
         public virtual ICollection<PlataformaPorJuego> PlataformasPorJuegos { get; set; }
 
 

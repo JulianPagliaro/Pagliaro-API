@@ -35,7 +35,7 @@ namespace GameStore.WebAPI.Migrations
                 column: "GeneroId",
                 principalTable: "Generos",
                 principalColumn: "Id",
-                onDelete: ReferentialAction.Cascade);
+                onDelete: ReferentialAction.NoAction);
         }
 
         /// <inheritdoc />
