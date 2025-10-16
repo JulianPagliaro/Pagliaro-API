@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.Marshalling;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,6 +16,8 @@ namespace GameStore.DataAccess
         public virtual DbSet<Estudio> Estudios { get; set; }    
         public virtual DbSet<Genero> Generos { get; set; }
         public virtual DbSet<Editor> Editores { get; set; }
+        public virtual DbSet<Plataforma> Plataformas { get; set; }
+        public virtual DbSet<PlataformaPorJuego> PlataformasPorJuegos { get; set; }
         public virtual DbSet<GeneroPorJuego> GenerosPorJuegos { get; set; }
         public virtual DbSet<EditorPorJuego> EditoresPorJuegos { get; set; }
         public virtual DbSet<Usuario> Usuarios { get; set; }
