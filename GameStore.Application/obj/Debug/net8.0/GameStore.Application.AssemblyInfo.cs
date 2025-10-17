@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GameStore.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d16faaacac71b619cc64b47ebaa71749df865efc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75741ea47a1df59c533c3527ce00b8b752d31f9b")]
 [assembly: System.Reflection.AssemblyProductAttribute("GameStore.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GameStore.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

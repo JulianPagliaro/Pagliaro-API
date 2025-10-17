@@ -3,12 +3,11 @@
   "WorkspaceRootPath": "C:\\Instituto\\EDI 3 API\\Solution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\instituto\\edi 3 api\\solution\\mapping\\juegomappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:mapping\\juegomappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Instituto\\EDI 3 API\\Solution\\Migrations\\20251017020904_migracion161023hs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20251017020904_migracion161023hs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\instituto\\edi 3 api\\solution\\controllers\\juegoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:controllers\\juegoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DBD55FE-62BA-429F-BBA2-4ADC0B46D283}|..\\Solution.Entities\\GameStore.Entities.csproj|c:\\instituto\\edi 3 api\\solution.entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,27 +46,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "JuegoMappingProfile.cs",
-              "DocumentMoniker": "C:\\Instituto\\EDI 3 API\\Solution\\Mapping\\JuegoMappingProfile.cs",
-              "RelativeDocumentMoniker": "Mapping\\JuegoMappingProfile.cs",
-              "ToolTip": "C:\\Instituto\\EDI 3 API\\Solution\\Mapping\\JuegoMappingProfile.cs",
-              "RelativeToolTip": "Mapping\\JuegoMappingProfile.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAwwBMAAAAAAAAAAAAAAA==",
+              "Title": "20251017020904_migracion161023hs.cs",
+              "DocumentMoniker": "C:\\Instituto\\EDI 3 API\\Solution\\Migrations\\20251017020904_migracion161023hs.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251017020904_migracion161023hs.cs",
+              "ToolTip": "C:\\Instituto\\EDI 3 API\\Solution\\Migrations\\20251017020904_migracion161023hs.cs",
+              "RelativeToolTip": "Migrations\\20251017020904_migracion161023hs.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T01:22:15.814Z",
+              "WhenOpened": "2025-10-17T02:09:05.625Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "JuegosController.cs",
-              "DocumentMoniker": "C:\\Instituto\\EDI 3 API\\Solution\\Controllers\\JuegosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\JuegosController.cs",
-              "ToolTip": "C:\\Instituto\\EDI 3 API\\Solution\\Controllers\\JuegosController.cs",
-              "RelativeToolTip": "Controllers\\JuegosController.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAAADMAAAAIAAAAAAAAAA==",
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Instituto\\EDI 3 API\\Solution.Entities\\Review.cs",
+              "RelativeDocumentMoniker": "..\\Solution.Entities\\Review.cs",
+              "ToolTip": "C:\\Instituto\\EDI 3 API\\Solution.Entities\\Review.cs",
+              "RelativeToolTip": "..\\Solution.Entities\\Review.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T01:20:40.077Z",
+              "WhenOpened": "2025-10-17T01:58:19.988Z",
               "EditorCaption": ""
             }
           ]
