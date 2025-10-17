@@ -18,8 +18,11 @@ namespace GameStore.Entities
         public virtual Estudio Estudio { get; set; }
         public int IdGenero { get; set; }
         public virtual Genero Genero { get; set; }
+        public int IdPlataforma { get; set; }
+        public virtual Plataforma Plataforma { get; set; }
         public virtual ICollection<EditorPorJuego> EditoresPorJuegos { get; set; }
         public virtual ICollection<GeneroPorJuego> GenerosPorJuegos { get; set; }
+        public virtual ICollection<PlataformaPorJuego> PlataformasPorJuegos { get; set; }
     }
 }
 

@@ -21,6 +21,7 @@ namespace GameStore.Application.Dtos.Juego
         public decimal Precio { get; set; }
         public int IdEstudio { get; set; }
         public int IdGenero { get; set; }
+        public int IdPlataforma { get; set; }
 
     }
 }

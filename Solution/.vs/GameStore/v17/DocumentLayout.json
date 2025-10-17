@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Instituto\\EDI 3 API\\Solution\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\instituto\\edi 3 api\\solution\\mapping\\juegomappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:mapping\\juegomappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\instituto\\edi 3 api\\solution\\controllers\\juegoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:controllers\\juegoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,6 +43,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JuegoMappingProfile.cs",
+              "DocumentMoniker": "C:\\Instituto\\EDI 3 API\\Solution\\Mapping\\JuegoMappingProfile.cs",
+              "RelativeDocumentMoniker": "Mapping\\JuegoMappingProfile.cs",
+              "ToolTip": "C:\\Instituto\\EDI 3 API\\Solution\\Mapping\\JuegoMappingProfile.cs",
+              "RelativeToolTip": "Mapping\\JuegoMappingProfile.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T01:22:15.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JuegosController.cs",
+              "DocumentMoniker": "C:\\Instituto\\EDI 3 API\\Solution\\Controllers\\JuegosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\JuegosController.cs",
+              "ToolTip": "C:\\Instituto\\EDI 3 API\\Solution\\Controllers\\JuegosController.cs",
+              "RelativeToolTip": "Controllers\\JuegosController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAADMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T01:20:40.077Z",
+              "EditorCaption": ""
             }
           ]
         },

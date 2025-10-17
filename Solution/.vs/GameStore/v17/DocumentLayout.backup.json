@@ -3,15 +3,12 @@
   "WorkspaceRootPath": "C:\\Instituto\\EDI 3 API\\Solution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\instituto\\edi 3 api\\solution\\migrations\\20251017005911_migracion161021hs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:migrations\\20251017005911_migracion161021hs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\instituto\\edi 3 api\\solution\\controllers\\juegoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:controllers\\juegoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB53E790-CCB6-4EE4-B4EC-E5001F7265C6}|..\\GameStore.DataAccess\\GameStore.DataAccess.csproj|c:\\instituto\\edi 3 api\\gamestore.dataaccess\\dbdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\instituto\\edi 3 api\\solution\\controllers\\editorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:controllers\\editorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\instituto\\edi 3 api\\solution\\mapping\\juegomappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:mapping\\juegomappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,41 +46,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20251017005911_migracion161021hs.cs",
-              "DocumentMoniker": "C:\\Instituto\\EDI 3 API\\Solution\\Migrations\\20251017005911_migracion161021hs.cs",
-              "RelativeDocumentMoniker": "Migrations\\20251017005911_migracion161021hs.cs",
-              "ToolTip": "C:\\Instituto\\EDI 3 API\\Solution\\Migrations\\20251017005911_migracion161021hs.cs*",
-              "RelativeToolTip": "Migrations\\20251017005911_migracion161021hs.cs*",
-              "ViewState": "AgIAAIYAAAAAAAAAAAAAAIcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T00:59:13.013Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DbDataAccess.cs",
-              "DocumentMoniker": "C:\\Instituto\\EDI 3 API\\GameStore.DataAccess\\DbDataAccess.cs",
-              "RelativeDocumentMoniker": "..\\GameStore.DataAccess\\DbDataAccess.cs",
-              "ToolTip": "C:\\Instituto\\EDI 3 API\\GameStore.DataAccess\\DbDataAccess.cs",
-              "RelativeToolTip": "..\\GameStore.DataAccess\\DbDataAccess.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "JuegoMappingProfile.cs",
+              "DocumentMoniker": "C:\\Instituto\\EDI 3 API\\Solution\\Mapping\\JuegoMappingProfile.cs",
+              "RelativeDocumentMoniker": "Mapping\\JuegoMappingProfile.cs",
+              "ToolTip": "C:\\Instituto\\EDI 3 API\\Solution\\Mapping\\JuegoMappingProfile.cs",
+              "RelativeToolTip": "Mapping\\JuegoMappingProfile.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwA8AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T00:55:34.134Z",
+              "WhenOpened": "2025-10-17T01:22:15.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EditoresController.cs",
-              "DocumentMoniker": "C:\\Instituto\\EDI 3 API\\Solution\\Controllers\\EditoresController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EditoresController.cs",
-              "ToolTip": "C:\\Instituto\\EDI 3 API\\Solution\\Controllers\\EditoresController.cs",
-              "RelativeToolTip": "Controllers\\EditoresController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "JuegosController.cs",
+              "DocumentMoniker": "C:\\Instituto\\EDI 3 API\\Solution\\Controllers\\JuegosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\JuegosController.cs",
+              "ToolTip": "C:\\Instituto\\EDI 3 API\\Solution\\Controllers\\JuegosController.cs",
+              "RelativeToolTip": "Controllers\\JuegosController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAADMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T00:55:21.447Z",
+              "WhenOpened": "2025-10-17T01:20:40.077Z",
               "EditorCaption": ""
             }
           ]
