@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameStore.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GameStore.Entities
 {
-    public class Usuario
+    public class Usuario :IEntidad
     {
         public int Id { get; set; }
 

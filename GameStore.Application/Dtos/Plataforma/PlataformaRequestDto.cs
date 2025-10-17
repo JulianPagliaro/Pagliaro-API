@@ -12,6 +12,8 @@ namespace GameStore.Application.Dtos.Plataforma
         public int Id { get; set; }
         [StringLength(100)]
         public string Nombre { get; set; }
+        [DataType(DataType.Date)]
+
         public DateTime FechaLanzamiento { get; set; }
     }
 }

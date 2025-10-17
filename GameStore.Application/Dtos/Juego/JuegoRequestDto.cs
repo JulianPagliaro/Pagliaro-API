@@ -13,6 +13,8 @@ namespace GameStore.Application.Dtos.Juego
         public int Id { get; set; }
         [StringLength(100)]
         public string Titulo { get; set; }
+        [DataType(DataType.Date)]
+
         public DateTime FechaPublicacion { get; set; }
 
         [Column(TypeName = "decimal(18, 2)")]
