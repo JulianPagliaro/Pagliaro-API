@@ -25,7 +25,5 @@ namespace GameStore.Entities
         public int JuegoId { get; set; }
         public virtual Juego Juego { get; set; }
 
-        public int UsuarioId { get; set; }
-        public virtual Usuario Usuario { get; set; }
     }
 }

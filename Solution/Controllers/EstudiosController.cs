@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using GameStore.Application;
 using GameStore.Application.Dtos.Estudio;
+using GameStore.Application.Dtos.Genero;
 using GameStore.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -61,21 +62,34 @@ namespace GameStore.WebAPI.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> Editar(int? id, [FromBody] EstudioRequestDto estudioDto)
+        public async Task<IActionResult> Editar(int? Id, EstudioRequestDto estudioRequestDto)
         {
-            if (!id.HasValue)
-                return BadRequest("El ID no puede ser nulo.");
+            if (!Id.HasValue)
+            {
+                return BadRequest("ID requerido");
+            }
 
             if (!ModelState.IsValid)
+            {
                 return BadRequest(ModelState);
+            }
 
-            var estudioBack = _estudioApp.GetById(id.Value);
-            if (estudioBack == null)
-                return NotFound();
+            Estudio estudioBack = _estudioApp.GetById(Id.Value);
 
-            estudioBack = _mapper.Map<Estudio>(estudioDto);
+            if (estudioBack is null)
+            {
+                return NotFound($"No se encontró el estudio con ID {Id.Value}");
+            }
+
+            _mapper.Map(estudioRequestDto, estudioBack);
+
+            estudioBack.Id = Id.Value;
+
             _estudioApp.Save(estudioBack);
-            return Ok();
+
+            var estudioResponseDto = _mapper.Map<EstudioResponseDto>(estudioBack);
+
+            return Ok(estudioResponseDto);
         }
 
         [HttpDelete]

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using GameStore.Application;
+using GameStore.Application.Dtos.Genero;
 using GameStore.Application.Dtos.Plataforma;
 using GameStore.Entities;
 using Microsoft.AspNetCore.Http;
@@ -61,21 +62,34 @@ namespace GameStore.WebAPI.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> Editar(int? id, [FromBody] PlataformaRequestDto plataformaDto)
+        public async Task<IActionResult> Editar(int? Id, PlataformaRequestDto plataformaRequestDto)
         {
-            if (!id.HasValue)
-                return BadRequest("El ID no puede ser nulo.");
+            if (!Id.HasValue)
+            {
+                return BadRequest("ID requerido");
+            }
 
             if (!ModelState.IsValid)
+            {
                 return BadRequest(ModelState);
+            }
 
-            var plataformaBack = _plataformaApp.GetById(id.Value);
-            if (plataformaBack == null)
-                return NotFound();
+            Plataforma plataformaBack = _plataformaApp.GetById(Id.Value);
 
-            plataformaBack = _mapper.Map<Plataforma>(plataformaDto);
+            if (plataformaBack is null)
+            {
+                return NotFound($"No se encontró la plataforma con ID {Id.Value}");
+            }
+
+            _mapper.Map(plataformaRequestDto, plataformaBack);
+
+            plataformaBack.Id = Id.Value;
+
             _plataformaApp.Save(plataformaBack);
-            return Ok();
+
+            var plataformaResponseDto = _mapper.Map<GeneroResponseDto>(plataformaBack);
+
+            return Ok(plataformaResponseDto);
         }
 
         [HttpDelete]
