@@ -58,21 +58,34 @@ namespace GameStore.WebAPI.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> Editar(int? id, [FromBody] GeneroRequestDto generoRequestDto)
+        public async Task<IActionResult> Editar(int? Id, GeneroRequestDto generoRequestDto)
         {
-            if (!id.HasValue)
-                return BadRequest("El ID no puede ser nulo.");
+            if (!Id.HasValue)
+            {
+                return BadRequest("ID requerido");
+            }
 
             if (!ModelState.IsValid)
+            {
                 return BadRequest(ModelState);
+            }
 
-            var generoBack = _genero.GetById(id.Value);
-            if (generoBack == null)
-                return NotFound();
+            Genero generoBack = _genero.GetById(Id.Value);
 
-            generoBack = _mapper.Map<Genero>(generoRequestDto);
+            if (generoBack is null)
+            {
+                return NotFound($"No se encontró el género con ID {Id.Value}");
+            }
+
+            _mapper.Map(generoRequestDto, generoBack);
+
+            generoBack.Id = Id.Value;
+
             _genero.Save(generoBack);
-            return Ok();
+
+            var generoResponseDto = _mapper.Map<GeneroResponseDto>(generoBack);
+
+            return Ok(generoResponseDto);
         }
 
         [HttpDelete]

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using GameStore.Application;
 using GameStore.Application.Dtos.Editor;
+using GameStore.Application.Dtos.Genero;
 using GameStore.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -58,7 +59,7 @@ namespace GameStore.WebAPI.Controllers
         {
             if (!Id.HasValue)
             {
-                return BadRequest("El ID no puede ser nulo.");
+                return BadRequest("ID requerido");
             }
 
             if (!ModelState.IsValid)
@@ -67,13 +68,21 @@ namespace GameStore.WebAPI.Controllers
             }
 
             Editor editorBack = _editor.GetById(Id.Value);
+
             if (editorBack is null)
             {
-                return NotFound();
+                return NotFound($"No se encontró el editor con ID {Id.Value}");
             }
-            editorBack= _mapper.Map<Editor>(editorRequestDto);
+
+            _mapper.Map(editorRequestDto, editorBack);
+
+            editorBack.Id = Id.Value;
+
             _editor.Save(editorBack);
-            return Ok();
+
+            var editorResponseDto = _mapper.Map<EditorResponseDto>(editorBack);
+
+            return Ok(editorResponseDto);
         }
 
         [HttpDelete]

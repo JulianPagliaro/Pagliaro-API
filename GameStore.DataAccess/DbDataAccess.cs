@@ -20,9 +20,7 @@ namespace GameStore.DataAccess
         public virtual DbSet<PlataformaPorJuego> PlataformasPorJuegos { get; set; }
         public virtual DbSet<GeneroPorJuego> GenerosPorJuegos { get; set; }
         public virtual DbSet<EditorPorJuego> EditoresPorJuegos { get; set; }
-        public virtual DbSet<Usuario> Usuarios { get; set; }
         public virtual DbSet<Review> Reviews { get; set; }
-
         public DbDataAccess(DbContextOptions<DbDataAccess> options) : base(options)  { }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.LogTo(Console.WriteLine).EnableDetailedErrors();
 
