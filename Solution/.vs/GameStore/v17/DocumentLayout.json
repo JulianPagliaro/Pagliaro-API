@@ -1,14 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Instituto\\EDI 3 API\\Solution\\",
+  "WorkspaceRootPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\instituto\\edi 3 api\\solution\\migrations\\20251030234744_eliminaciontablausers3010.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:migrations\\20251030234744_eliminaciontablausers3010.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DBD55FE-62BA-429F-BBA2-4ADC0B46D283}|..\\Solution.Entities\\GameStore.Entities.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution.entities\\editor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\instituto\\edi 3 api\\solution\\migrations\\20251017020904_migracion161023hs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:migrations\\20251017020904_migracion161023hs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution\\migrations\\20251031012046_tablapaises3010.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:migrations\\20251031012046_tablapaises3010.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53E790-CCB6-4EE4-B4EC-E5001F7265C6}|..\\GameStore.DataAccess\\GameStore.DataAccess.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\gamestore.dataaccess\\dbdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53E790-CCB6-4EE4-B4EC-E5001F7265C6}|..\\GameStore.DataAccess\\GameStore.DataAccess.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\gamestore.dataaccess\\microsoftidentity\\roleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB53E790-CCB6-4EE4-B4EC-E5001F7265C6}|..\\GameStore.DataAccess\\GameStore.DataAccess.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\gamestore.dataaccess\\microsoftidentity\\userclamconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution\\controllers\\editorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:controllers\\editorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution\\mapping\\paismappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:mapping\\paismappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,6 +43,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -47,31 +67,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20251030234744_EliminacionTablaUsers3010.cs",
-              "DocumentMoniker": "C:\\Instituto\\EDI 3 API\\Solution\\Migrations\\20251030234744_EliminacionTablaUsers3010.cs",
-              "RelativeDocumentMoniker": "Migrations\\20251030234744_EliminacionTablaUsers3010.cs",
-              "ToolTip": "C:\\Instituto\\EDI 3 API\\Solution\\Migrations\\20251030234744_EliminacionTablaUsers3010.cs",
-              "RelativeToolTip": "Migrations\\20251030234744_EliminacionTablaUsers3010.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Title": "Editor.cs",
+              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution.Entities\\Editor.cs",
+              "RelativeDocumentMoniker": "..\\Solution.Entities\\Editor.cs",
+              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution.Entities\\Editor.cs",
+              "RelativeToolTip": "..\\Solution.Entities\\Editor.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T23:47:46.249Z",
+              "WhenOpened": "2025-10-31T01:32:12.839Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "20251017020904_migracion161023hs.cs",
-              "DocumentMoniker": "C:\\Instituto\\EDI 3 API\\Solution\\Migrations\\20251017020904_migracion161023hs.cs",
-              "RelativeDocumentMoniker": "Migrations\\20251017020904_migracion161023hs.cs",
-              "ToolTip": "C:\\Instituto\\EDI 3 API\\Solution\\Migrations\\20251017020904_migracion161023hs.cs",
-              "RelativeToolTip": "Migrations\\20251017020904_migracion161023hs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAA0AAAAAAAAAA==",
+              "Title": "20251031012046_TablaPaises3010.cs",
+              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Migrations\\20251031012046_TablaPaises3010.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251031012046_TablaPaises3010.cs",
+              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Migrations\\20251031012046_TablaPaises3010.cs",
+              "RelativeToolTip": "Migrations\\20251031012046_TablaPaises3010.cs",
+              "ViewState": "AgIAAF8CAAAAAAAAAAAgwG8CAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T02:09:05.625Z",
+              "WhenOpened": "2025-10-31T01:20:48.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoleConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.DataAccess\\MicrosoftIdentity\\RoleConfiguration.cs",
+              "RelativeDocumentMoniker": "..\\GameStore.DataAccess\\MicrosoftIdentity\\RoleConfiguration.cs",
+              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.DataAccess\\MicrosoftIdentity\\RoleConfiguration.cs",
+              "RelativeToolTip": "..\\GameStore.DataAccess\\MicrosoftIdentity\\RoleConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T01:15:48.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserClamConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.DataAccess\\MicrosoftIdentity\\UserClamConfiguration.cs",
+              "RelativeDocumentMoniker": "..\\GameStore.DataAccess\\MicrosoftIdentity\\UserClamConfiguration.cs",
+              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.DataAccess\\MicrosoftIdentity\\UserClamConfiguration.cs",
+              "RelativeToolTip": "..\\GameStore.DataAccess\\MicrosoftIdentity\\UserClamConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T01:15:35.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DbDataAccess.cs",
+              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.DataAccess\\DbDataAccess.cs",
+              "RelativeDocumentMoniker": "..\\GameStore.DataAccess\\DbDataAccess.cs",
+              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.DataAccess\\DbDataAccess.cs",
+              "RelativeToolTip": "..\\GameStore.DataAccess\\DbDataAccess.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T01:14:38.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EditoresController.cs",
+              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\EditoresController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EditoresController.cs",
+              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\EditoresController.cs",
+              "RelativeToolTip": "Controllers\\EditoresController.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAAGUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T01:08:04.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PaisMappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Mapping\\PaisMappingProfile.cs",
+              "RelativeDocumentMoniker": "Mapping\\PaisMappingProfile.cs",
+              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Mapping\\PaisMappingProfile.cs",
+              "RelativeToolTip": "Mapping\\PaisMappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T01:00:56.237Z",
               "EditorCaption": ""
             }
           ]

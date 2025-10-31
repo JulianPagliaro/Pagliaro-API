@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Instituto\\EDI 3 API\\GameStore.Abstractions\\GameStore.Abstractions.csproj",
+      "projectUniqueName": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj",
       "projectName": "GameStore.Abstractions",
-      "projectPath": "C:\\Instituto\\EDI 3 API\\GameStore.Abstractions\\GameStore.Abstractions.csproj",
+      "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj",
       "packagesPath": "C:\\Users\\Redmo\\.nuget\\packages\\",
-      "outputPath": "C:\\Instituto\\EDI 3 API\\GameStore.Abstractions\\obj\\",
+      "outputPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

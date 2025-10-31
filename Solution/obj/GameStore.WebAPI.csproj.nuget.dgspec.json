@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Instituto\\EDI 3 API\\Solution\\GameStore.WebAPI.csproj": {}
+    "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution\\GameStore.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Instituto\\EDI 3 API\\GameStore.Abstractions\\GameStore.Abstractions.csproj": {
+    "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Instituto\\EDI 3 API\\GameStore.Abstractions\\GameStore.Abstractions.csproj",
+        "projectUniqueName": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj",
         "projectName": "GameStore.Abstractions",
-        "projectPath": "C:\\Instituto\\EDI 3 API\\GameStore.Abstractions\\GameStore.Abstractions.csproj",
+        "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj",
         "packagesPath": "C:\\Users\\Redmo\\.nuget\\packages\\",
-        "outputPath": "C:\\Instituto\\EDI 3 API\\GameStore.Abstractions\\obj\\",
+        "outputPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Instituto\\EDI 3 API\\GameStore.Application\\GameStore.Application.csproj": {
+    "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Application\\GameStore.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Instituto\\EDI 3 API\\GameStore.Application\\GameStore.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Application\\GameStore.Application.csproj",
         "projectName": "GameStore.Application",
-        "projectPath": "C:\\Instituto\\EDI 3 API\\GameStore.Application\\GameStore.Application.csproj",
+        "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Application\\GameStore.Application.csproj",
         "packagesPath": "C:\\Users\\Redmo\\.nuget\\packages\\",
-        "outputPath": "C:\\Instituto\\EDI 3 API\\GameStore.Application\\obj\\",
+        "outputPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,11 +97,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Instituto\\EDI 3 API\\GameStore.Abstractions\\GameStore.Abstractions.csproj": {
-                "projectPath": "C:\\Instituto\\EDI 3 API\\GameStore.Abstractions\\GameStore.Abstractions.csproj"
+              "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj": {
+                "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj"
               },
-              "C:\\Instituto\\EDI 3 API\\GameStore.Repository\\GameStore.Repository.csproj": {
-                "projectPath": "C:\\Instituto\\EDI 3 API\\GameStore.Repository\\GameStore.Repository.csproj"
+              "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Repository\\GameStore.Repository.csproj": {
+                "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Repository\\GameStore.Repository.csproj"
               }
             }
           }
@@ -141,14 +141,14 @@
         }
       }
     },
-    "C:\\Instituto\\EDI 3 API\\GameStore.DataAccess\\GameStore.DataAccess.csproj": {
+    "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.DataAccess\\GameStore.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Instituto\\EDI 3 API\\GameStore.DataAccess\\GameStore.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.DataAccess\\GameStore.DataAccess.csproj",
         "projectName": "GameStore.DataAccess",
-        "projectPath": "C:\\Instituto\\EDI 3 API\\GameStore.DataAccess\\GameStore.DataAccess.csproj",
+        "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.DataAccess\\GameStore.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Redmo\\.nuget\\packages\\",
-        "outputPath": "C:\\Instituto\\EDI 3 API\\GameStore.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -169,11 +169,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Instituto\\EDI 3 API\\GameStore.Abstractions\\GameStore.Abstractions.csproj": {
-                "projectPath": "C:\\Instituto\\EDI 3 API\\GameStore.Abstractions\\GameStore.Abstractions.csproj"
+              "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj": {
+                "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj"
               },
-              "C:\\Instituto\\EDI 3 API\\Solution.Entities\\GameStore.Entities.csproj": {
-                "projectPath": "C:\\Instituto\\EDI 3 API\\Solution.Entities\\GameStore.Entities.csproj"
+              "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj": {
+                "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj"
               }
             }
           }
@@ -229,14 +229,14 @@
         }
       }
     },
-    "C:\\Instituto\\EDI 3 API\\GameStore.Repository\\GameStore.Repository.csproj": {
+    "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Repository\\GameStore.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Instituto\\EDI 3 API\\GameStore.Repository\\GameStore.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Repository\\GameStore.Repository.csproj",
         "projectName": "GameStore.Repository",
-        "projectPath": "C:\\Instituto\\EDI 3 API\\GameStore.Repository\\GameStore.Repository.csproj",
+        "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Repository\\GameStore.Repository.csproj",
         "packagesPath": "C:\\Users\\Redmo\\.nuget\\packages\\",
-        "outputPath": "C:\\Instituto\\EDI 3 API\\GameStore.Repository\\obj\\",
+        "outputPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -257,8 +257,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Instituto\\EDI 3 API\\GameStore.Abstractions\\GameStore.Abstractions.csproj": {
-                "projectPath": "C:\\Instituto\\EDI 3 API\\GameStore.Abstractions\\GameStore.Abstractions.csproj"
+              "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj": {
+                "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj"
               }
             }
           }
@@ -298,14 +298,14 @@
         }
       }
     },
-    "C:\\Instituto\\EDI 3 API\\GameStore.Services\\GameStore.Services.csproj": {
+    "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Instituto\\EDI 3 API\\GameStore.Services\\GameStore.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj",
         "projectName": "GameStore.Services",
-        "projectPath": "C:\\Instituto\\EDI 3 API\\GameStore.Services\\GameStore.Services.csproj",
+        "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj",
         "packagesPath": "C:\\Users\\Redmo\\.nuget\\packages\\",
-        "outputPath": "C:\\Instituto\\EDI 3 API\\GameStore.Services\\obj\\",
+        "outputPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -373,14 +373,14 @@
         }
       }
     },
-    "C:\\Instituto\\EDI 3 API\\Solution.Entities\\GameStore.Entities.csproj": {
+    "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Instituto\\EDI 3 API\\Solution.Entities\\GameStore.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj",
         "projectName": "GameStore.Entities",
-        "projectPath": "C:\\Instituto\\EDI 3 API\\Solution.Entities\\GameStore.Entities.csproj",
+        "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj",
         "packagesPath": "C:\\Users\\Redmo\\.nuget\\packages\\",
-        "outputPath": "C:\\Instituto\\EDI 3 API\\Solution.Entities\\obj\\",
+        "outputPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -401,8 +401,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Instituto\\EDI 3 API\\GameStore.Abstractions\\GameStore.Abstractions.csproj": {
-                "projectPath": "C:\\Instituto\\EDI 3 API\\GameStore.Abstractions\\GameStore.Abstractions.csproj"
+              "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj": {
+                "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj"
               }
             }
           }
@@ -448,14 +448,14 @@
         }
       }
     },
-    "C:\\Instituto\\EDI 3 API\\Solution\\GameStore.WebAPI.csproj": {
+    "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution\\GameStore.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Instituto\\EDI 3 API\\Solution\\GameStore.WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution\\GameStore.WebAPI.csproj",
         "projectName": "GameStore.WebAPI",
-        "projectPath": "C:\\Instituto\\EDI 3 API\\Solution\\GameStore.WebAPI.csproj",
+        "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution\\GameStore.WebAPI.csproj",
         "packagesPath": "C:\\Users\\Redmo\\.nuget\\packages\\",
-        "outputPath": "C:\\Instituto\\EDI 3 API\\Solution\\obj\\",
+        "outputPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -476,17 +476,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Instituto\\EDI 3 API\\GameStore.Application\\GameStore.Application.csproj": {
-                "projectPath": "C:\\Instituto\\EDI 3 API\\GameStore.Application\\GameStore.Application.csproj"
+              "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Application\\GameStore.Application.csproj": {
+                "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Application\\GameStore.Application.csproj"
               },
-              "C:\\Instituto\\EDI 3 API\\GameStore.DataAccess\\GameStore.DataAccess.csproj": {
-                "projectPath": "C:\\Instituto\\EDI 3 API\\GameStore.DataAccess\\GameStore.DataAccess.csproj"
+              "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.DataAccess\\GameStore.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.DataAccess\\GameStore.DataAccess.csproj"
               },
-              "C:\\Instituto\\EDI 3 API\\GameStore.Services\\GameStore.Services.csproj": {
-                "projectPath": "C:\\Instituto\\EDI 3 API\\GameStore.Services\\GameStore.Services.csproj"
+              "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj": {
+                "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj"
               },
-              "C:\\Instituto\\EDI 3 API\\Solution.Entities\\GameStore.Entities.csproj": {
-                "projectPath": "C:\\Instituto\\EDI 3 API\\Solution.Entities\\GameStore.Entities.csproj"
+              "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj": {
+                "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj"
               }
             }
           }

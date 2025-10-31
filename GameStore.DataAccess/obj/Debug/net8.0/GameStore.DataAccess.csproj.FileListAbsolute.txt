@@ -18,3 +18,23 @@ C:\Instituto\EDI 3 API\GameStore.DataAccess\obj\Debug\net8.0\refint\GameStore.Da
 C:\Instituto\EDI 3 API\GameStore.DataAccess\obj\Debug\net8.0\GameStore.DataAccess.pdb
 C:\Instituto\EDI 3 API\GameStore.DataAccess\obj\Debug\net8.0\GameStore.DataAccess.genruntimeconfig.cache
 C:\Instituto\EDI 3 API\GameStore.DataAccess\obj\Debug\net8.0\ref\GameStore.DataAccess.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\obj\Debug\net8.0\GameStore.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\obj\Debug\net8.0\GameStore.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\obj\Debug\net8.0\GameStore.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\obj\Debug\net8.0\GameStore.DataAccess.AssemblyInfo.cs
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\obj\Debug\net8.0\GameStore.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\obj\Debug\net8.0\GameStore.DataAccess.sourcelink.json
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\obj\Debug\net8.0\GameStore.DataAccess.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\obj\Debug\net8.0\refint\GameStore.DataAccess.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\obj\Debug\net8.0\GameStore.DataAccess.pdb
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\bin\Debug\net8.0\GameStore.DataAccess.deps.json
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\bin\Debug\net8.0\GameStore.DataAccess.runtimeconfig.json
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\bin\Debug\net8.0\GameStore.DataAccess.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\bin\Debug\net8.0\GameStore.DataAccess.pdb
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\bin\Debug\net8.0\GameStore.Abstractions.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\bin\Debug\net8.0\GameStore.Entities.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\bin\Debug\net8.0\GameStore.Abstractions.pdb
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\bin\Debug\net8.0\GameStore.Entities.pdb
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\obj\Debug\net8.0\GameStor.F40EF51A.Up2Date
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\obj\Debug\net8.0\GameStore.DataAccess.genruntimeconfig.cache
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.DataAccess\obj\Debug\net8.0\ref\GameStore.DataAccess.dll

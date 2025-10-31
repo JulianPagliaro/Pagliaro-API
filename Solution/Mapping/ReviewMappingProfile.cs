@@ -4,9 +4,9 @@ using GameStore.Entities;
 
 namespace GameStore.WebAPI.Mapping
 {
-    public class ReviewMappingDto : Profile
+    public class ReviewMappingProfile : Profile
     {
-        public ReviewMappingDto()
+        public ReviewMappingProfile()
         {
             CreateMap<Review, ReviewResponseDto>();
 

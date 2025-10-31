@@ -16,3 +16,21 @@ C:\Instituto\EDI 3 API\GameStore.Application\obj\Debug\net8.0\GameStore.Applicat
 C:\Instituto\EDI 3 API\GameStore.Application\obj\Debug\net8.0\refint\GameStore.Application.dll
 C:\Instituto\EDI 3 API\GameStore.Application\obj\Debug\net8.0\GameStore.Application.pdb
 C:\Instituto\EDI 3 API\GameStore.Application\obj\Debug\net8.0\ref\GameStore.Application.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Application\bin\Debug\net8.0\GameStore.Application.deps.json
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Application\bin\Debug\net8.0\GameStore.Application.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Application\bin\Debug\net8.0\GameStore.Application.pdb
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Application\bin\Debug\net8.0\GameStore.Abstractions.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Application\bin\Debug\net8.0\GameStore.Repository.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Application\bin\Debug\net8.0\GameStore.Abstractions.pdb
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Application\bin\Debug\net8.0\GameStore.Repository.pdb
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Application\obj\Debug\net8.0\GameStore.Application.csproj.AssemblyReference.cache
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Application\obj\Debug\net8.0\GameStore.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Application\obj\Debug\net8.0\GameStore.Application.AssemblyInfoInputs.cache
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Application\obj\Debug\net8.0\GameStore.Application.AssemblyInfo.cs
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Application\obj\Debug\net8.0\GameStore.Application.csproj.CoreCompileInputs.cache
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Application\obj\Debug\net8.0\GameStore.Application.sourcelink.json
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Application\obj\Debug\net8.0\GameStor.34E1C27F.Up2Date
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Application\obj\Debug\net8.0\GameStore.Application.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Application\obj\Debug\net8.0\refint\GameStore.Application.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Application\obj\Debug\net8.0\GameStore.Application.pdb
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Application\obj\Debug\net8.0\ref\GameStore.Application.dll

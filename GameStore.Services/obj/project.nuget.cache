@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bHHpQjWtpyI=",
+  "dgSpecHash": "2UwEsnRZD6M=",
   "success": true,
-  "projectFilePath": "C:\\Instituto\\EDI 3 API\\GameStore.Services\\GameStore.Services.csproj",
+  "projectFilePath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Redmo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Redmo\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
