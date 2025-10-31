@@ -18,10 +18,10 @@ namespace GameStore.Entities
         public int Id { get; set; }
         public string Nombre { get; set; }
 
-        public string Pais { get; set; }
-
         [DataType(DataType.Date)]
         public DateTime FechaFundacion { get; set; }
+        public int IdPais { get; set; }
+        public virtual Pais Pais { get; set; }
         public virtual ICollection<Juego> Juegos { get; set; }
     }
 }
