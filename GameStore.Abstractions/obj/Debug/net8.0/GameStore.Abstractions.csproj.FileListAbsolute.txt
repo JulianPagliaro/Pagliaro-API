@@ -10,3 +10,15 @@ C:\Instituto\EDI 3 API\GameStore.Abstractions\obj\Debug\net8.0\GameStore.Abstrac
 C:\Instituto\EDI 3 API\GameStore.Abstractions\obj\Debug\net8.0\refint\GameStore.Abstractions.dll
 C:\Instituto\EDI 3 API\GameStore.Abstractions\obj\Debug\net8.0\GameStore.Abstractions.pdb
 C:\Instituto\EDI 3 API\GameStore.Abstractions\obj\Debug\net8.0\ref\GameStore.Abstractions.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Abstractions\bin\Debug\net8.0\GameStore.Abstractions.deps.json
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Abstractions\bin\Debug\net8.0\GameStore.Abstractions.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Abstractions\bin\Debug\net8.0\GameStore.Abstractions.pdb
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Abstractions\obj\Debug\net8.0\GameStore.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Abstractions\obj\Debug\net8.0\GameStore.Abstractions.AssemblyInfoInputs.cache
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Abstractions\obj\Debug\net8.0\GameStore.Abstractions.AssemblyInfo.cs
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Abstractions\obj\Debug\net8.0\GameStore.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Abstractions\obj\Debug\net8.0\GameStore.Abstractions.sourcelink.json
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Abstractions\obj\Debug\net8.0\GameStore.Abstractions.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Abstractions\obj\Debug\net8.0\refint\GameStore.Abstractions.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Abstractions\obj\Debug\net8.0\GameStore.Abstractions.pdb
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Abstractions\obj\Debug\net8.0\ref\GameStore.Abstractions.dll

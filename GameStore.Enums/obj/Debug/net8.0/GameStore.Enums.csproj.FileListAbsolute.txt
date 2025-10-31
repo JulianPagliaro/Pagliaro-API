@@ -10,3 +10,15 @@ C:\Instituto\EDI 3 API\GameStore.Enums\obj\Debug\net8.0\GameStore.Enums.dll
 C:\Instituto\EDI 3 API\GameStore.Enums\obj\Debug\net8.0\refint\GameStore.Enums.dll
 C:\Instituto\EDI 3 API\GameStore.Enums\obj\Debug\net8.0\GameStore.Enums.pdb
 C:\Instituto\EDI 3 API\GameStore.Enums\obj\Debug\net8.0\ref\GameStore.Enums.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Enums\bin\Debug\net8.0\GameStore.Enums.deps.json
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Enums\bin\Debug\net8.0\GameStore.Enums.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Enums\bin\Debug\net8.0\GameStore.Enums.pdb
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Enums\obj\Debug\net8.0\GameStore.Enums.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Enums\obj\Debug\net8.0\GameStore.Enums.AssemblyInfoInputs.cache
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Enums\obj\Debug\net8.0\GameStore.Enums.AssemblyInfo.cs
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Enums\obj\Debug\net8.0\GameStore.Enums.csproj.CoreCompileInputs.cache
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Enums\obj\Debug\net8.0\GameStore.Enums.sourcelink.json
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Enums\obj\Debug\net8.0\GameStore.Enums.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Enums\obj\Debug\net8.0\refint\GameStore.Enums.dll
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Enums\obj\Debug\net8.0\GameStore.Enums.pdb
+C:\Users\Redmo\Source\Repos\Pagliaro-API\GameStore.Enums\obj\Debug\net8.0\ref\GameStore.Enums.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Instituto\\EDI 3 API\\GameStore.Services\\GameStore.Services.csproj": {}
+    "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj": {}
   },
   "projects": {
-    "C:\\Instituto\\EDI 3 API\\GameStore.Services\\GameStore.Services.csproj": {
+    "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Instituto\\EDI 3 API\\GameStore.Services\\GameStore.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj",
         "projectName": "GameStore.Services",
-        "projectPath": "C:\\Instituto\\EDI 3 API\\GameStore.Services\\GameStore.Services.csproj",
+        "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj",
         "packagesPath": "C:\\Users\\Redmo\\.nuget\\packages\\",
-        "outputPath": "C:\\Instituto\\EDI 3 API\\GameStore.Services\\obj\\",
+        "outputPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

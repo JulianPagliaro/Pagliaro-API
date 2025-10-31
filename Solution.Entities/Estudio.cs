@@ -21,6 +21,9 @@ namespace GameStore.Entities
 
         [DataType(DataType.Date)]
         public DateTime FechaFundacion { get; set; }
+        public int IdPais { get; set; }
+        public virtual Pais Pais { get; set; }
+
         public virtual ICollection<EditorPorJuego> EstudiosPorJuegos { get; set; }
     }
 }
