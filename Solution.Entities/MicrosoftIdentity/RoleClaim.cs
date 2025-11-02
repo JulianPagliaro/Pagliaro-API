@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace Biblioteca.Entities.MicrosoftIdentity
+namespace GameStore.Entities.MicrosoftIdentity
 {
     public class RoleClaim : IdentityRoleClaim<Guid>
     {

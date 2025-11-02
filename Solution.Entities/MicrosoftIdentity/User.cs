@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 
-namespace Biblioteca.Entities.MicrosoftIdentity
+namespace GameStore.Entities.MicrosoftIdentity
 {
     public class User : IdentityUser<Guid>
     {

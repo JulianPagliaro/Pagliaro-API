@@ -3,26 +3,29 @@ using GameStore.Application;
 using GameStore.Application.Dtos.Estudio;
 using GameStore.Application.Dtos.Genero;
 using GameStore.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GameStore.WebAPI.Controllers
 {
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Route("api/[controller]")]
     [ApiController]
     public class EstudiosController : ControllerBase
     {
         private readonly ILogger<EstudiosController> _logger;
-        private readonly IApplication<Estudio> _estudioApp;
+        private readonly IApplication<Estudio> _estudio;
         private readonly IMapper _mapper;
 
         public EstudiosController(
             ILogger<EstudiosController> logger,
-            IApplication<Estudio> estudioApp,
+            IApplication<Estudio> estudio,
             IMapper mapper)
         {
             _logger = logger;
-            _estudioApp = estudioApp;
+            _estudio = estudio;
             _mapper = mapper;
         }
 
@@ -30,35 +33,39 @@ namespace GameStore.WebAPI.Controllers
         [Route("All")]
         public async Task<IActionResult> All()
         {
-            var estudios = _estudioApp.GetAll();
-            var response = _mapper.Map<IList<EstudioResponseDto>>(estudios);
-            return Ok(response);
+            var items = _estudio.GetAll();
+            return Ok(_mapper.Map<IList<EstudioResponseDto>>(items));
         }
 
         [HttpGet]
         [Route("ById")]
-        public async Task<IActionResult> ById(int? id)
+        public async Task<IActionResult> ById(int? Id)
         {
-            if (!id.HasValue)
+            if (!Id.HasValue)
+            {
                 return BadRequest();
+            }
 
-            var estudio = _estudioApp.GetById(id.Value);
-            if (estudio == null)
+            var entity = _estudio.GetById(Id.Value);
+            if (entity is null)
+            {
                 return NotFound();
+            }
 
-            var response = _mapper.Map<EstudioResponseDto>(estudio);
-            return Ok(response);
+            return Ok(_mapper.Map<EstudioResponseDto>(entity));
         }
 
         [HttpPost]
-        public async Task<IActionResult> Crear([FromBody] EstudioRequestDto estudioDto)
+        public async Task<IActionResult> Crear(EstudioRequestDto estudioRequestDto)
         {
             if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            {
+                return BadRequest();
+            }
 
-            var estudio = _mapper.Map<Estudio>(estudioDto);
-            _estudioApp.Save(estudio);
-            return Ok(estudio.Id);
+            var entity = _mapper.Map<Estudio>(estudioRequestDto);
+            _estudio.Save(entity);
+            return Ok(entity.Id);
         }
 
         [HttpPut]
@@ -74,7 +81,7 @@ namespace GameStore.WebAPI.Controllers
                 return BadRequest(ModelState);
             }
 
-            Estudio estudioBack = _estudioApp.GetById(Id.Value);
+            Estudio estudioBack = _estudio.GetById(Id.Value);
 
             if (estudioBack is null)
             {
@@ -85,24 +92,28 @@ namespace GameStore.WebAPI.Controllers
 
             estudioBack.Id = Id.Value;
 
-            _estudioApp.Save(estudioBack);
+            _estudio.Save(estudioBack);
 
-            var estudioResponseDto = _mapper.Map<EstudioResponseDto>(estudioBack);
+            var discograficaResponseDto = _mapper.Map<EstudioResponseDto>(estudioBack);
 
-            return Ok(estudioResponseDto);
+            return Ok(discograficaResponseDto);
         }
 
         [HttpDelete]
-        public async Task<IActionResult> Borrar(int? id)
+        public async Task<IActionResult> Borrar(int? Id)
         {
-            if (!id.HasValue)
+            if (!Id.HasValue)
+            {
                 return BadRequest();
+            }
 
-            var estudioBack = _estudioApp.GetById(id.Value);
-            if (estudioBack == null)
+            var existing = _estudio.GetById(Id.Value);
+            if (existing is null)
+            {
                 return NotFound();
+            }
 
-            _estudioApp.Delete(estudioBack.Id);
+            _estudio.Delete(existing.Id);
             return Ok();
         }
     }

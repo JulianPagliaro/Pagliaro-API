@@ -1,23 +1,29 @@
-﻿using Biblioteca.Application.Dtos.Identity.User;
-using Biblioteca.Entities.MicrosoftIdentity;
+﻿using GameStore.Application.Dtos.Identity.User;
+using GameStore.Application.Dtos.Login;
+using GameStore.Entities.MicrosoftIdentity;
+using GameStore.Services.AuthServices;
+using GameStore.WebApi.Configurations;
 using GameStore.WebAPI.Controllers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Biblioteca.WebApi.Controllers.Identity
+namespace GameStore.WebApi.Controllers.Identity
 {
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
     {
+        private readonly ITokenHandlerService _servicioToken;
         private readonly UserManager<User> _userManager;
         private readonly ILogger<EditoresController> _logger;
         public AuthController(
             UserManager<User> userManager
-            , ILogger<EditoresController> logger)
+            , ILogger<EditoresController> logger, ITokenHandlerService servicioToken)
         {
             _userManager = userManager;
             _logger = logger;
+            _servicioToken = servicioToken;
         }
 
         [HttpPost]
@@ -48,6 +54,7 @@ namespace Biblioteca.WebApi.Controllers.Identity
                         UserName = user.Email.Substring(0, user.Email.IndexOf('@'))
                     });
                 }
+
                 else
                 {
                     return BadRequest(Creado.Errors.Select(e => e.Description).ToList());
@@ -68,7 +75,7 @@ namespace Biblioteca.WebApi.Controllers.Identity
                 var existeUsuario = _userManager.FindByEmailAsync(user.Email).Result;
                 if (existeUsuario != null)
                 {
-                    return BadRequest("Existe un usuario registrado con el mail " + user.Email + ".");
+                    return BadRequest("Existe un usuario registrado con el mal " + user.Email + ".");
                 }
                 var Creado = _userManager.CreateAsync(new User()
                 {
@@ -80,6 +87,8 @@ namespace Biblioteca.WebApi.Controllers.Identity
                 }, user.Password).Result;
                 if (Creado.Succeeded)
                 {
+                    var userBack = _userManager.FindByEmailAsync(user.Email);
+                    _ = _userManager.AddToRoleAsync(userBack.Result, "Administrador");
                     return Ok(new UserRegistroResponseDto
                     {
                         NombreCompleto = string.Join(" ", user.Nombres, user.Apellidos),
@@ -96,6 +105,55 @@ namespace Biblioteca.WebApi.Controllers.Identity
             {
                 return BadRequest("Los datos enviados no son validos.");
             }
+        }
+
+        [HttpPost]
+        [Route("login")]
+        [AllowAnonymous]
+        public async Task<IActionResult> Login([FromBody] LoginUserRequestDto userlogin)
+        {
+            if (ModelState.IsValid)
+            {
+                var existeUsuario = await _userManager.FindByEmailAsync(userlogin.Email);
+                if (existeUsuario != null)
+                {
+                    var isCorrect = await _userManager.CheckPasswordAsync(existeUsuario, userlogin.Password);
+                    if (isCorrect)
+                    {
+                        try
+                        {
+                            var parametros = new TokenParameters()
+                            {
+                                Id = existeUsuario.Id.ToString(),
+                                PaswordHash = existeUsuario.PasswordHash,
+                                UserName = existeUsuario.UserName,
+                                Email = existeUsuario.Email
+                            };
+                            var jwt = _servicioToken.GenerateJwtTokens(parametros);
+                            return Ok(new LoginUserResponseDto()
+                            {
+                                Login = true,
+                                Token = jwt,
+                                UserName = existeUsuario.UserName,
+                                Mail = existeUsuario.Email
+                            });
+                        }
+                        catch (Exception)
+                        {
+
+                            throw;
+                        }
+                    }
+                }
+            }
+            return BadRequest(new LoginUserResponseDto()
+            {
+                Login = false,
+                Errores = new List<string>()
+                    {
+                       "Usuario o contraseña incorrecto!"
+                    }
+            });
         }
     }
 }

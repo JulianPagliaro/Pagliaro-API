@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Biblioteca.Application.Dtos.Identity.User
+namespace GameStore.Application.Dtos.Identity.User
 {
     public class UserRegistroResponseDto
     {

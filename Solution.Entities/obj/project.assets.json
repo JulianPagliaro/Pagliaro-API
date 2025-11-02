@@ -715,9 +715,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj",
+      "projectUniqueName": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj",
       "projectName": "GameStore.Entities",
-      "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj",
+      "projectPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj",
       "packagesPath": "C:\\Users\\Redmo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution.Entities\\obj\\",
       "projectStyle": "PackageReference",
@@ -740,8 +740,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj": {
-              "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj"
+            "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj": {
+              "projectPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj"
             }
           }
         }
