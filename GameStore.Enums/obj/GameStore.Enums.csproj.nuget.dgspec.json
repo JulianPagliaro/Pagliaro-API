@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Enums\\GameStore.Enums.csproj": {}
+    "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Enums\\GameStore.Enums.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Enums\\GameStore.Enums.csproj": {
+    "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Enums\\GameStore.Enums.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Enums\\GameStore.Enums.csproj",
+        "projectUniqueName": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Enums\\GameStore.Enums.csproj",
         "projectName": "GameStore.Enums",
-        "projectPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Enums\\GameStore.Enums.csproj",
+        "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Enums\\GameStore.Enums.csproj",
         "packagesPath": "C:\\Users\\Redmo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Enums\\obj\\",
         "projectStyle": "PackageReference",
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

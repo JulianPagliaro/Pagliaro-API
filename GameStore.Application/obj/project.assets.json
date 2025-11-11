@@ -52,9 +52,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Application\\GameStore.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Application\\GameStore.Application.csproj",
       "projectName": "GameStore.Application",
-      "projectPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Application\\GameStore.Application.csproj",
+      "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Application\\GameStore.Application.csproj",
       "packagesPath": "C:\\Users\\Redmo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Application\\obj\\",
       "projectStyle": "PackageReference",
@@ -77,11 +77,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj": {
-              "projectPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj"
+            "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj": {
+              "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Abstractions\\GameStore.Abstractions.csproj"
             },
-            "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Repository\\GameStore.Repository.csproj": {
-              "projectPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Repository\\GameStore.Repository.csproj"
+            "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Repository\\GameStore.Repository.csproj": {
+              "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Repository\\GameStore.Repository.csproj"
             }
           }
         }
@@ -117,7 +117,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
