@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jHthcB8N1Zk=",
+  "dgSpecHash": "dojG4ukD1u0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\GameStore.WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution\\GameStore.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Redmo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Redmo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+2PHEA4l9ZA=",
+  "dgSpecHash": "x4ADIFUbn+A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj",
+  "projectFilePath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Redmo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\9.0.6\\microsoft.aspnetcore.cryptography.internal.9.0.6.nupkg.sha512",
     "C:\\Users\\Redmo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\9.0.6\\microsoft.aspnetcore.cryptography.keyderivation.9.0.6.nupkg.sha512",
