@@ -1,15 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution\\controllers\\identity\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:controllers\\identity\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E52204F-9B91-4A86-9C77-49691278A912}|..\\GameStore.Services\\GameStore.Services.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\gamestore.services\\authservices\\tokenhandlerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -17,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 20,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,32 +86,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TokenHandlerService.cs",
-              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Services\\AuthServices\\TokenHandlerService.cs",
-              "RelativeDocumentMoniker": "..\\GameStore.Services\\AuthServices\\TokenHandlerService.cs",
-              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Services\\AuthServices\\TokenHandlerService.cs",
-              "RelativeToolTip": "..\\GameStore.Services\\AuthServices\\TokenHandlerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T00:06:38.625Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\Identity\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\Identity\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\Identity\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\Identity\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T23:52:01.126Z",
-              "EditorCaption": ""
             }
           ]
         },
