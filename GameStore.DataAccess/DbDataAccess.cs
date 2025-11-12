@@ -1,4 +1,4 @@
-﻿using Biblioteca.Entities.MicrosoftIdentity;
+﻿using GameStore.Entities.MicrosoftIdentity;
 using GameStore.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;

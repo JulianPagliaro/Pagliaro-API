@@ -5999,9 +5999,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution\\GameStore.WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\GameStore.WebAPI.csproj",
       "projectName": "GameStore.WebAPI",
-      "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution\\GameStore.WebAPI.csproj",
+      "projectPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\GameStore.WebAPI.csproj",
       "packagesPath": "C:\\Users\\Redmo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution\\obj\\",
       "projectStyle": "PackageReference",
@@ -6024,17 +6024,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Application\\GameStore.Application.csproj": {
-              "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Application\\GameStore.Application.csproj"
+            "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Application\\GameStore.Application.csproj": {
+              "projectPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Application\\GameStore.Application.csproj"
             },
-            "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.DataAccess\\GameStore.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.DataAccess\\GameStore.DataAccess.csproj"
+            "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.DataAccess\\GameStore.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.DataAccess\\GameStore.DataAccess.csproj"
             },
-            "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj": {
-              "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj"
+            "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj": {
+              "projectPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj"
             },
-            "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj": {
-              "projectPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj"
+            "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj": {
+              "projectPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj"
             }
           }
         }

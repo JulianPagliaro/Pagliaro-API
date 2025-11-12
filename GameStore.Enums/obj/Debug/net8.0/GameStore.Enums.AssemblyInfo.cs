@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GameStore.Enums")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8dcdb7074c2ebb0b778eeb2b9d55ca3ed7685401")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32655bd8ee96100cc60f3c424a100ca83f729329")]
 [assembly: System.Reflection.AssemblyProductAttribute("GameStore.Enums")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GameStore.Enums")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

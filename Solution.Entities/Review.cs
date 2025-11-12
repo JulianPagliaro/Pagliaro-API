@@ -1,4 +1,5 @@
 ﻿using GameStore.Abstractions;
+using GameStore.Entities.MicrosoftIdentity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -23,7 +24,9 @@ namespace GameStore.Entities
         public DateTime FechaCreacion { get; set; }
 
         public int JuegoId { get; set; }
+        public Guid UserId { get; set; }
         public virtual Juego Juego { get; set; }
+        public virtual User User { get; set; }
         #endregion
         #region getters y setters
         public void SetCalificacion(int calificacion)

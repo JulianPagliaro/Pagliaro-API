@@ -260,7 +260,7 @@ namespace GameStore.WebAPI.Migrations
 
                     b.HasIndex("PaisId");
 
-                    b.ToTable("Editores");
+                    b.ToTable("Editores", (string)null);
                 });
 
             modelBuilder.Entity("GameStore.Entities.EditorPorJuego", b =>
@@ -288,7 +288,7 @@ namespace GameStore.WebAPI.Migrations
 
                     b.HasIndex("IdLibro");
 
-                    b.ToTable("EditoresPorJuegos");
+                    b.ToTable("EditoresPorJuegos", (string)null);
                 });
 
             modelBuilder.Entity("GameStore.Entities.Estudio", b =>
@@ -317,7 +317,7 @@ namespace GameStore.WebAPI.Migrations
 
                     b.HasIndex("PaisId");
 
-                    b.ToTable("Estudios");
+                    b.ToTable("Estudios", (string)null);
                 });
 
             modelBuilder.Entity("GameStore.Entities.Genero", b =>
@@ -334,7 +334,7 @@ namespace GameStore.WebAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Generos");
+                    b.ToTable("Generos", (string)null);
                 });
 
             modelBuilder.Entity("GameStore.Entities.GeneroPorJuego", b =>
@@ -357,7 +357,7 @@ namespace GameStore.WebAPI.Migrations
 
                     b.HasIndex("IdJuego");
 
-                    b.ToTable("GenerosPorJuegos");
+                    b.ToTable("GenerosPorJuegos", (string)null);
                 });
 
             modelBuilder.Entity("GameStore.Entities.Juego", b =>
@@ -407,7 +407,7 @@ namespace GameStore.WebAPI.Migrations
 
                     b.HasIndex("PlataformaId");
 
-                    b.ToTable("Juegos");
+                    b.ToTable("Juegos", (string)null);
                 });
 
             modelBuilder.Entity("GameStore.Entities.Pais", b =>
@@ -424,7 +424,7 @@ namespace GameStore.WebAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Paises");
+                    b.ToTable("Paises", (string)null);
                 });
 
             modelBuilder.Entity("GameStore.Entities.PaisPorEditor", b =>
@@ -447,7 +447,7 @@ namespace GameStore.WebAPI.Migrations
 
                     b.HasIndex("IdPais");
 
-                    b.ToTable("PaisesPorEditores");
+                    b.ToTable("PaisesPorEditores", (string)null);
                 });
 
             modelBuilder.Entity("GameStore.Entities.PaisPorEstudio", b =>
@@ -470,7 +470,7 @@ namespace GameStore.WebAPI.Migrations
 
                     b.HasIndex("IdPais");
 
-                    b.ToTable("PaisesPorEstudios");
+                    b.ToTable("PaisesPorEstudios", (string)null);
                 });
 
             modelBuilder.Entity("GameStore.Entities.Plataforma", b =>
@@ -491,7 +491,7 @@ namespace GameStore.WebAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Plataformas");
+                    b.ToTable("Plataformas", (string)null);
                 });
 
             modelBuilder.Entity("GameStore.Entities.PlataformaPorJuego", b =>
@@ -517,7 +517,7 @@ namespace GameStore.WebAPI.Migrations
 
                     b.HasIndex("PlataformaId");
 
-                    b.ToTable("PlataformasPorJuegos");
+                    b.ToTable("PlataformasPorJuegos", (string)null);
                 });
 
             modelBuilder.Entity("GameStore.Entities.Review", b =>
@@ -546,7 +546,7 @@ namespace GameStore.WebAPI.Migrations
 
                     b.HasIndex("JuegoId");
 
-                    b.ToTable("Reviews");
+                    b.ToTable("Reviews", (string)null);
                 });
 
             modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.RoleClaim", b =>
