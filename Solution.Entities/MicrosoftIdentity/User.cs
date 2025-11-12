@@ -5,6 +5,10 @@ namespace GameStore.Entities.MicrosoftIdentity
 {
     public class User : IdentityUser<Guid>
     {
+        public User()
+        {
+            Review = new HashSet<Review>();
+        }
         [Required(ErrorMessage = "{0} Required")]
         [StringLength(100)]
         [PersonalData]
@@ -15,5 +19,6 @@ namespace GameStore.Entities.MicrosoftIdentity
         public string Apellidos { get; set; }
         [DataType(DataType.Date)]
         public DateTime? FechaNacimiento { get; set; }
+        public virtual ICollection<Review> Review { get; set; }
     }
 }

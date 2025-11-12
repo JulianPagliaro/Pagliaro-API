@@ -21,7 +21,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Biblioteca.WebApi", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "GameStore.WebApi", Version = "v1" });
     //var filePath = Path.Combine(System.AppContext.BaseDirectory, "NutricionProfesional.WebApi.xml");
     //c.IncludeXmlComments(filePath);
     var jwtSecurityScheme = new OpenApiSecurityScheme
@@ -44,9 +44,10 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddDbContext<DbDataAccess>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
-            o => o.MigrationsAssembly("VinylStore.WebApi"));
+            o => o.MigrationsAssembly("GameStore.WebAPI"));
     options.UseLazyLoadingProxies();
 });
+
 builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtConfig"));
 
 builder.Services.AddAuthentication(options =>
@@ -54,7 +55,8 @@ builder.Services.AddAuthentication(options =>
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(jwt => {
+}).AddJwtBearer(jwt =>
+{
     var key = Encoding.ASCII.GetBytes(builder.Configuration["JwtConfig:Secret"]);
     jwt.SaveToken = true;
     jwt.TokenValidationParameters = new TokenValidationParameters
