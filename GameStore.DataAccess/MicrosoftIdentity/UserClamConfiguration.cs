@@ -1,4 +1,4 @@
-﻿using Biblioteca.Entities.MicrosoftIdentity;
+﻿using GameStore.Entities.MicrosoftIdentity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

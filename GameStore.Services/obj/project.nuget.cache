@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "pMQ/16jmZmg=",
+=======
+  "dgSpecHash": "ZH9OIZW/wvk=",
+>>>>>>> b03ed2f33c3499e2380dcc98490d90601ea37243
   "success": true,
   "projectFilePath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj",
   "expectedPackageFiles": [

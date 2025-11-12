@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "HVIsqZqM7YU=",
+=======
+  "dgSpecHash": "XYF0qSny66o=",
+>>>>>>> b03ed2f33c3499e2380dcc98490d90601ea37243
   "success": true,
   "projectFilePath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Enums\\GameStore.Enums.csproj",
   "expectedPackageFiles": [],

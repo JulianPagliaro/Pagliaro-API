@@ -1,8 +1,8 @@
-﻿using Biblioteca.Entities.MicrosoftIdentity;
+﻿using GameStore.Entities.MicrosoftIdentity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Biblioteca.DataAccess.EntityConfigurations.MicrosoftIdentity
+namespace GameStore.DataAccess.EntityConfigurations.MicrosoftIdentity
 {
     public class RoleConfiguration : IEntityTypeConfiguration<Role>
     {

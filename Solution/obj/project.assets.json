@@ -6003,7 +6003,7 @@
       "projectName": "GameStore.WebAPI",
       "projectPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\GameStore.WebAPI.csproj",
       "packagesPath": "C:\\Users\\Redmo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\obj\\",
+      "outputPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

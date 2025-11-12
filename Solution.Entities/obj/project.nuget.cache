@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "h6jWw6r7V18=",
+=======
+  "dgSpecHash": "h4ymhbwdmck=",
+>>>>>>> b03ed2f33c3499e2380dcc98490d90601ea37243
   "success": true,
   "projectFilePath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj",
   "expectedPackageFiles": [

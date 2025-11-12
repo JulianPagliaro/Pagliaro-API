@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "1jx0qQ/yIL0=",
+=======
+  "dgSpecHash": "VsCie7ES5eg=",
+>>>>>>> b03ed2f33c3499e2380dcc98490d90601ea37243
   "success": true,
   "projectFilePath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.DataAccess\\GameStore.DataAccess.csproj",
   "expectedPackageFiles": [
