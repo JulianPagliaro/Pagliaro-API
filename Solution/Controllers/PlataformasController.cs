@@ -5,6 +5,7 @@ using GameStore.Application.Dtos.Genero;
 using GameStore.Application.Dtos.Plataforma;
 using GameStore.Entities;
 using GameStore.Entities.MicrosoftIdentity;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Http;
@@ -13,6 +14,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GameStore.WebAPI.Controllers
 {
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+
     [Route("api/[controller]")]
     [ApiController]
     public class PlataformasController : ControllerBase

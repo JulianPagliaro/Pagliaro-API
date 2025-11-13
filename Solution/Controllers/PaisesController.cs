@@ -4,6 +4,7 @@ using GameStore.Application.Dtos.Editor;
 using GameStore.Application.Dtos.Pais;
 using GameStore.Entities;
 using GameStore.Entities.MicrosoftIdentity;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Identity;
@@ -11,6 +12,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GameStore.WebAPI.Controllers
 {
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+
     [Route("api/[controller]")]
     [ApiController]
     public class PaisesController : ControllerBase

@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution\\migrations\\20251113122921_migracion1311.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:migrations\\20251113122921_migracion1311.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution\\controllers\\plataformascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:controllers\\plataformascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution\\migrations\\20251031012046_tablapaises3010.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:migrations\\20251031012046_tablapaises3010.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution\\controllers\\paisescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:controllers\\paisescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution\\controllers\\generoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:controllers\\generoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution\\controllers\\editorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:controllers\\editorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution\\controllers\\estudioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:controllers\\estudioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -99,27 +115,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20251113122921_Migracion1311.cs",
-              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Migrations\\20251113122921_Migracion1311.cs",
-              "RelativeDocumentMoniker": "Migrations\\20251113122921_Migracion1311.cs",
-              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Migrations\\20251113122921_Migracion1311.cs",
-              "RelativeToolTip": "Migrations\\20251113122921_Migracion1311.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "PlataformasController.cs",
+              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\PlataformasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PlataformasController.cs",
+              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\PlataformasController.cs",
+              "RelativeToolTip": "Controllers\\PlataformasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T12:29:25.034Z",
+              "WhenOpened": "2025-11-13T15:06:18.312Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "20251031012046_TablaPaises3010.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution\\Migrations\\20251031012046_TablaPaises3010.Designer.cs",
-              "RelativeDocumentMoniker": "Migrations\\20251031012046_TablaPaises3010.Designer.cs",
-              "ToolTip": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\Solution\\Migrations\\20251031012046_TablaPaises3010.Designer.cs",
-              "RelativeToolTip": "Migrations\\20251031012046_TablaPaises3010.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "PaisesController.cs",
+              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\PaisesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PaisesController.cs",
+              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\PaisesController.cs",
+              "RelativeToolTip": "Controllers\\PaisesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T12:26:56.051Z",
+              "WhenOpened": "2025-11-13T15:05:55.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditoresController.cs",
+              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\EditoresController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EditoresController.cs",
+              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\EditoresController.cs",
+              "RelativeToolTip": "Controllers\\EditoresController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T15:05:24.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T13:40:45.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EstudiosController.cs",
+              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\EstudiosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EstudiosController.cs",
+              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\EstudiosController.cs",
+              "RelativeToolTip": "Controllers\\EstudiosController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T12:46:08.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GenerosController.cs",
+              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\GenerosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GenerosController.cs",
+              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\GenerosController.cs",
+              "RelativeToolTip": "Controllers\\GenerosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T12:45:09.221Z",
               "EditorCaption": ""
             }
           ]

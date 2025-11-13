@@ -1,14 +1,10 @@
 ﻿using AutoMapper;
 using GameStore.Application;
-using GameStore.Application.Dtos.Editor;
 using GameStore.Application.Dtos.Estudio;
-using GameStore.Application.Dtos.Genero;
 using GameStore.Entities;
 using GameStore.Entities.MicrosoftIdentity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Components.Forms;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 

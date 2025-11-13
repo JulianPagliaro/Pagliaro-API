@@ -3,13 +3,14 @@ using GameStore.Application;
 using GameStore.Application.Dtos.Genero;
 using GameStore.Entities;
 using GameStore.Entities.MicrosoftIdentity;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GameStore.WebAPI.Controllers
 {
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Route("api/[controller]")]
     [ApiController]
     public class GenerosController : ControllerBase
@@ -35,7 +36,7 @@ namespace GameStore.WebAPI.Controllers
         {
             var id = User.FindFirst("Id").Value.ToString();
             var user = _userManager.FindByIdAsync(id).Result;
-            if (_userManager.IsInRoleAsync(user, "Administrador").Result)
+            if (_userManager.IsInRoleAsync(user, "Admin").Result)
             {
                 var name = User.FindFirst("name");
                 var a = User.Claims;
@@ -43,6 +44,7 @@ namespace GameStore.WebAPI.Controllers
             }
             return Unauthorized();
         }
+
 
         [HttpGet]
         [Route("ById")]
