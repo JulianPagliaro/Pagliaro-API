@@ -25,7 +25,182 @@ namespace GameStore.WebAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.Role", b =>
+            modelBuilder.Entity("GameStore.Entities.Editor", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("FechaFundacion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("IdPais")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PaisId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PaisId");
+
+                    b.ToTable("Editores");
+                });
+
+            modelBuilder.Entity("GameStore.Entities.EditorPorJuego", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("EstudioId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdAutor")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdLibro")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EstudioId");
+
+                    b.HasIndex("IdAutor");
+
+                    b.HasIndex("IdLibro");
+
+                    b.ToTable("EditoresPorJuegos");
+                });
+
+            modelBuilder.Entity("GameStore.Entities.Estudio", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("FechaFundacion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("IdPais")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.Property<int>("PaisId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PaisId");
+
+                    b.ToTable("Estudios");
+                });
+
+            modelBuilder.Entity("GameStore.Entities.Genero", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Generos");
+                });
+
+            modelBuilder.Entity("GameStore.Entities.GeneroPorJuego", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("IdGenero")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdJuego")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdGenero");
+
+                    b.HasIndex("IdJuego");
+
+                    b.ToTable("GenerosPorJuegos");
+                });
+
+            modelBuilder.Entity("GameStore.Entities.Juego", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("EditorId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("FechaPublicacion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("GeneroId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdEstudio")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdGenero")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdPlataforma")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PlataformaId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("decimal(18, 2)");
+
+                    b.Property<string>("Titulo")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EditorId");
+
+                    b.HasIndex("GeneroId");
+
+                    b.HasIndex("IdEstudio");
+
+                    b.HasIndex("PlataformaId");
+
+                    b.ToTable("Juegos");
+                });
+
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.Role", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -53,7 +228,7 @@ namespace GameStore.WebAPI.Migrations
                     b.ToTable("Role", (string)null);
                 });
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.RoleClaim", b =>
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.RoleClaim", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -77,7 +252,7 @@ namespace GameStore.WebAPI.Migrations
                     b.ToTable("RoleClaim", (string)null);
                 });
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.User", b =>
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.User", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -156,7 +331,7 @@ namespace GameStore.WebAPI.Migrations
                     b.ToTable("User", (string)null);
                 });
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.UserClaim", b =>
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.UserClaim", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -180,7 +355,7 @@ namespace GameStore.WebAPI.Migrations
                     b.ToTable("UserClaim", (string)null);
                 });
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.UserLogin", b =>
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.UserLogin", b =>
                 {
                     b.Property<string>("LoginProvider")
                         .HasColumnType("nvarchar(450)");
@@ -201,7 +376,7 @@ namespace GameStore.WebAPI.Migrations
                     b.ToTable("UserLogin", (string)null);
                 });
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.UserRole", b =>
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.UserRole", b =>
                 {
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
@@ -216,7 +391,7 @@ namespace GameStore.WebAPI.Migrations
                     b.ToTable("UserRole", (string)null);
                 });
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.UserToken", b =>
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.UserToken", b =>
                 {
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
@@ -235,181 +410,6 @@ namespace GameStore.WebAPI.Migrations
                     b.ToTable("UserToken", (string)null);
                 });
 
-            modelBuilder.Entity("GameStore.Entities.Editor", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("FechaFundacion")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("IdPais")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PaisId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PaisId");
-
-                    b.ToTable("Editores", (string)null);
-                });
-
-            modelBuilder.Entity("GameStore.Entities.EditorPorJuego", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("EstudioId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdAutor")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdLibro")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("EstudioId");
-
-                    b.HasIndex("IdAutor");
-
-                    b.HasIndex("IdLibro");
-
-                    b.ToTable("EditoresPorJuegos", (string)null);
-                });
-
-            modelBuilder.Entity("GameStore.Entities.Estudio", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("FechaFundacion")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("IdPais")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
-
-                    b.Property<int>("PaisId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PaisId");
-
-                    b.ToTable("Estudios", (string)null);
-                });
-
-            modelBuilder.Entity("GameStore.Entities.Genero", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Generos", (string)null);
-                });
-
-            modelBuilder.Entity("GameStore.Entities.GeneroPorJuego", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("IdGenero")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdJuego")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IdGenero");
-
-                    b.HasIndex("IdJuego");
-
-                    b.ToTable("GenerosPorJuegos", (string)null);
-                });
-
-            modelBuilder.Entity("GameStore.Entities.Juego", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("EditorId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("FechaPublicacion")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("GeneroId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdEstudio")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdGenero")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdPlataforma")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PlataformaId")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("Precio")
-                        .HasColumnType("decimal(18, 2)");
-
-                    b.Property<string>("Titulo")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("EditorId");
-
-                    b.HasIndex("GeneroId");
-
-                    b.HasIndex("IdEstudio");
-
-                    b.HasIndex("PlataformaId");
-
-                    b.ToTable("Juegos", (string)null);
-                });
-
             modelBuilder.Entity("GameStore.Entities.Pais", b =>
                 {
                     b.Property<int>("Id")
@@ -424,7 +424,7 @@ namespace GameStore.WebAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Paises", (string)null);
+                    b.ToTable("Paises");
                 });
 
             modelBuilder.Entity("GameStore.Entities.PaisPorEditor", b =>
@@ -447,7 +447,7 @@ namespace GameStore.WebAPI.Migrations
 
                     b.HasIndex("IdPais");
 
-                    b.ToTable("PaisesPorEditores", (string)null);
+                    b.ToTable("PaisesPorEditores");
                 });
 
             modelBuilder.Entity("GameStore.Entities.PaisPorEstudio", b =>
@@ -470,7 +470,7 @@ namespace GameStore.WebAPI.Migrations
 
                     b.HasIndex("IdPais");
 
-                    b.ToTable("PaisesPorEstudios", (string)null);
+                    b.ToTable("PaisesPorEstudios");
                 });
 
             modelBuilder.Entity("GameStore.Entities.Plataforma", b =>
@@ -491,7 +491,7 @@ namespace GameStore.WebAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Plataformas", (string)null);
+                    b.ToTable("Plataformas");
                 });
 
             modelBuilder.Entity("GameStore.Entities.PlataformaPorJuego", b =>
@@ -517,7 +517,7 @@ namespace GameStore.WebAPI.Migrations
 
                     b.HasIndex("PlataformaId");
 
-                    b.ToTable("PlataformasPorJuegos", (string)null);
+                    b.ToTable("PlataformasPorJuegos");
                 });
 
             modelBuilder.Entity("GameStore.Entities.Review", b =>
@@ -542,62 +542,16 @@ namespace GameStore.WebAPI.Migrations
                     b.Property<int>("JuegoId")
                         .HasColumnType("int");
 
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("Id");
 
                     b.HasIndex("JuegoId");
 
-                    b.ToTable("Reviews", (string)null);
-                });
+                    b.HasIndex("UserId");
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.RoleClaim", b =>
-                {
-                    b.HasOne("Biblioteca.Entities.MicrosoftIdentity.Role", null)
-                        .WithMany()
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.UserClaim", b =>
-                {
-                    b.HasOne("Biblioteca.Entities.MicrosoftIdentity.User", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.UserLogin", b =>
-                {
-                    b.HasOne("Biblioteca.Entities.MicrosoftIdentity.User", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.UserRole", b =>
-                {
-                    b.HasOne("Biblioteca.Entities.MicrosoftIdentity.Role", null)
-                        .WithMany()
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Biblioteca.Entities.MicrosoftIdentity.User", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.UserToken", b =>
-                {
-                    b.HasOne("Biblioteca.Entities.MicrosoftIdentity.User", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.ToTable("Reviews");
                 });
 
             modelBuilder.Entity("GameStore.Entities.Editor", b =>
@@ -695,6 +649,57 @@ namespace GameStore.WebAPI.Migrations
                     b.Navigation("Plataforma");
                 });
 
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.RoleClaim", b =>
+                {
+                    b.HasOne("GameStore.Entities.MicrosoftIdentity.Role", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.UserClaim", b =>
+                {
+                    b.HasOne("GameStore.Entities.MicrosoftIdentity.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.UserLogin", b =>
+                {
+                    b.HasOne("GameStore.Entities.MicrosoftIdentity.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.UserRole", b =>
+                {
+                    b.HasOne("GameStore.Entities.MicrosoftIdentity.Role", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("GameStore.Entities.MicrosoftIdentity.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.UserToken", b =>
+                {
+                    b.HasOne("GameStore.Entities.MicrosoftIdentity.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("GameStore.Entities.PaisPorEditor", b =>
                 {
                     b.HasOne("GameStore.Entities.Editor", "Editor")
@@ -760,7 +765,15 @@ namespace GameStore.WebAPI.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("GameStore.Entities.MicrosoftIdentity.User", "User")
+                        .WithMany("Review")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Juego");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("GameStore.Entities.Editor", b =>
@@ -785,6 +798,11 @@ namespace GameStore.WebAPI.Migrations
                     b.Navigation("GenerosPorJuegos");
 
                     b.Navigation("PlataformasPorJuegos");
+                });
+
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.User", b =>
+                {
+                    b.Navigation("Review");
                 });
 
             modelBuilder.Entity("GameStore.Entities.Pais", b =>

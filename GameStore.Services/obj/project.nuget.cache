@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "pMQ/16jmZmg=",
-=======
-  "dgSpecHash": "ZH9OIZW/wvk=",
->>>>>>> b03ed2f33c3499e2380dcc98490d90601ea37243
   "success": true,
   "projectFilePath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj",
   "expectedPackageFiles": [
@@ -18,5 +14,15 @@
     "C:\\Users\\Redmo\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.12.1\\microsoft.identitymodel.tokens.8.12.1.nupkg.sha512",
     "C:\\Users\\Redmo\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.12.1\\system.identitymodel.tokens.jwt.8.12.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "message": "Problema al leer el archivo de caché C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Services\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
+      "projectPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

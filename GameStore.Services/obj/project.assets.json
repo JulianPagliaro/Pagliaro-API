@@ -491,7 +491,7 @@
       "projectName": "GameStore.Services",
       "projectPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Services\\GameStore.Services.csproj",
       "packagesPath": "C:\\Users\\Redmo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Redmo\\Source\\Repos\\Pagliaro-API\\GameStore.Services\\obj\\",
+      "outputPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -562,5 +562,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Services\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0."
+    }
+  ]
 }

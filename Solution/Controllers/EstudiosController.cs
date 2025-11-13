@@ -1,11 +1,15 @@
 ﻿using AutoMapper;
 using GameStore.Application;
+using GameStore.Application.Dtos.Editor;
 using GameStore.Application.Dtos.Estudio;
 using GameStore.Application.Dtos.Genero;
 using GameStore.Entities;
+using GameStore.Entities.MicrosoftIdentity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GameStore.WebAPI.Controllers
@@ -15,30 +19,45 @@ namespace GameStore.WebAPI.Controllers
     [ApiController]
     public class EstudiosController : ControllerBase
     {
+        private readonly UserManager<User> _userManager;
         private readonly ILogger<EstudiosController> _logger;
         private readonly IApplication<Estudio> _estudio;
         private readonly IMapper _mapper;
 
         public EstudiosController(
             ILogger<EstudiosController> logger,
+            UserManager<User> userManager,
             IApplication<Estudio> estudio,
             IMapper mapper)
         {
             _logger = logger;
             _estudio = estudio;
             _mapper = mapper;
+            _userManager = userManager;
+
         }
 
         [HttpGet]
         [Route("All")]
+        [Authorize(Roles = "Admin, Client")]
+
         public async Task<IActionResult> All()
         {
-            var items = _estudio.GetAll();
-            return Ok(_mapper.Map<IList<EstudioResponseDto>>(items));
+            var id = User.FindFirst("Id").Value.ToString();
+            var user = _userManager.FindByIdAsync(id).Result;
+            if (_userManager.IsInRoleAsync(user, "Admin").Result)
+            {
+                var name = User.FindFirst("name");
+                var a = User.Claims;
+                return Ok(_mapper.Map<IList<EstudioResponseDto>>(_estudio.GetAll()));
+            }
+            return Unauthorized();
         }
 
         [HttpGet]
         [Route("ById")]
+        [Authorize(Roles = "Admin, Client")]
+
         public async Task<IActionResult> ById(int? Id)
         {
             if (!Id.HasValue)
@@ -56,6 +75,8 @@ namespace GameStore.WebAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Crear(EstudioRequestDto estudioRequestDto)
         {
             if (!ModelState.IsValid)
@@ -69,6 +90,8 @@ namespace GameStore.WebAPI.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Editar(int? Id, EstudioRequestDto estudioRequestDto)
         {
             if (!Id.HasValue)
@@ -100,6 +123,8 @@ namespace GameStore.WebAPI.Controllers
         }
 
         [HttpDelete]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Borrar(int? Id)
         {
             if (!Id.HasValue)

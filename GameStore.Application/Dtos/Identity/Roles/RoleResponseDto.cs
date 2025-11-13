@@ -1,4 +1,4 @@
-﻿namespace Biblioteca.Application.Dtos.Identity.Roles
+﻿namespace GameStore.Application.Dtos.Identity.Roles
 {
     public class RoleResponseDto
     {

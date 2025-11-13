@@ -1,9 +1,14 @@
 ﻿using AutoMapper;
 using GameStore.Application;
+using GameStore.Application.Dtos.Editor;
 using GameStore.Application.Dtos.Genero;
 using GameStore.Application.Dtos.Plataforma;
 using GameStore.Entities;
+using GameStore.Entities.MicrosoftIdentity;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GameStore.WebAPI.Controllers
@@ -12,31 +17,44 @@ namespace GameStore.WebAPI.Controllers
     [ApiController]
     public class PlataformasController : ControllerBase
     {
+        private readonly UserManager<User> _userManager;
         private readonly ILogger<PlataformasController> _logger;
         private readonly IApplication<Plataforma> _plataformaApp;
         private readonly IMapper _mapper;
 
         public PlataformasController(
             ILogger<PlataformasController> logger,
+            UserManager<User> userManager,
             IApplication<Plataforma> plataformaApp,
             IMapper mapper)
         {
             _logger = logger;
             _plataformaApp = plataformaApp;
             _mapper = mapper;
+            _userManager = userManager;
         }
 
         [HttpGet]
         [Route("All")]
+        [Authorize(Roles = "Admin, Client")]
+
         public async Task<IActionResult> All()
         {
-            var plataformas = _plataformaApp.GetAll();
-            var response = _mapper.Map<IList<PlataformaResponseDto>>(plataformas);
-            return Ok(response);
+            var id = User.FindFirst("Id").Value.ToString();
+            var user = _userManager.FindByIdAsync(id).Result;
+            if (_userManager.IsInRoleAsync(user, "Admin").Result)
+            {
+                var name = User.FindFirst("name");
+                var a = User.Claims;
+                return Ok(_mapper.Map<IList<PlataformaResponseDto>>(_plataformaApp.GetAll()));
+            }
+            return Unauthorized();
         }
 
         [HttpGet]
         [Route("ById")]
+        [Authorize(Roles = "Admin, Client")]
+
         public async Task<IActionResult> ById(int? id)
         {
             if (!id.HasValue)
@@ -51,6 +69,8 @@ namespace GameStore.WebAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Crear([FromBody] PlataformaRequestDto plataformaDto)
         {
             if (!ModelState.IsValid)
@@ -62,6 +82,8 @@ namespace GameStore.WebAPI.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Editar(int? Id, PlataformaRequestDto plataformaRequestDto)
         {
             if (!Id.HasValue)
@@ -93,6 +115,8 @@ namespace GameStore.WebAPI.Controllers
         }
 
         [HttpDelete]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Borrar(int? id)
         {
             if (!id.HasValue)

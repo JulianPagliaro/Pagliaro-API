@@ -88,7 +88,7 @@ namespace GameStore.WebApi.Controllers.Identity
                 if (Creado.Succeeded)
                 {
                     var userBack = _userManager.FindByEmailAsync(user.Email);
-                    _ = _userManager.AddToRoleAsync(userBack.Result, "Administrador");
+                    _ = _userManager.AddToRoleAsync(userBack.Result, "Admin");
                     return Ok(new UserRegistroResponseDto
                     {
                         NombreCompleto = string.Join(" ", user.Nombres, user.Apellidos),
@@ -122,12 +122,14 @@ namespace GameStore.WebApi.Controllers.Identity
                     {
                         try
                         {
+                            var roles = await _userManager.GetRolesAsync(existeUsuario);
                             var parametros = new TokenParameters()
                             {
                                 Id = existeUsuario.Id.ToString(),
                                 PaswordHash = existeUsuario.PasswordHash,
                                 UserName = existeUsuario.UserName,
-                                Email = existeUsuario.Email
+                                Email = existeUsuario.Email,
+                                Roles= roles
                             };
                             var jwt = _servicioToken.GenerateJwtTokens(parametros);
                             return Ok(new LoginUserResponseDto()

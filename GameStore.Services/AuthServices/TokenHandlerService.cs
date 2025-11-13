@@ -22,17 +22,29 @@ namespace GameStore.Services.AuthServices
         {
             var jwtTokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_jwtConfig.Secret);
-            var tokenDescriptor = new SecurityTokenDescriptor
+            var claims = new List<Claim>
             {
-                Subject = new ClaimsIdentity(new[]
-                {
                     new Claim("Id", parametros.Id),
                     new Claim(JwtRegisteredClaimNames.Sub, parametros.Id),
                     new Claim(JwtRegisteredClaimNames.Name, parametros.UserName),
                     new Claim(JwtRegisteredClaimNames.Email, parametros.Email)
-                }),
+                };
+
+            if (parametros.Roles != null && parametros.Roles.Any())
+            {
+                foreach (var role in parametros.Roles)
+                {
+                    claims.Add(new Claim(ClaimTypes.Role, role));
+                }   
+            }
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(claims),
                 Expires = DateTime.UtcNow.AddHours(4),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha512Signature)
+                SigningCredentials = new SigningCredentials(
+                    new SymmetricSecurityKey(key),
+                SecurityAlgorithms.HmacSha256Signature
+                )
             };
             var token = jwtTokenHandler.CreateToken(tokenDescriptor);
             var jwtToken = jwtTokenHandler.WriteToken(token);

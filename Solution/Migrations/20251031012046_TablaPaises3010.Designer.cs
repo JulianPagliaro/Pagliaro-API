@@ -28,7 +28,7 @@ namespace GameStore.WebAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.Role", b =>
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.Role", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -56,7 +56,7 @@ namespace GameStore.WebAPI.Migrations
                     b.ToTable("Role", (string)null);
                 });
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.RoleClaim", b =>
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.RoleClaim", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -80,7 +80,7 @@ namespace GameStore.WebAPI.Migrations
                     b.ToTable("RoleClaim", (string)null);
                 });
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.User", b =>
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.User", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -159,7 +159,7 @@ namespace GameStore.WebAPI.Migrations
                     b.ToTable("User", (string)null);
                 });
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.UserClaim", b =>
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.UserClaim", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -183,7 +183,7 @@ namespace GameStore.WebAPI.Migrations
                     b.ToTable("UserClaim", (string)null);
                 });
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.UserLogin", b =>
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.UserLogin", b =>
                 {
                     b.Property<string>("LoginProvider")
                         .HasColumnType("nvarchar(450)");
@@ -204,7 +204,7 @@ namespace GameStore.WebAPI.Migrations
                     b.ToTable("UserLogin", (string)null);
                 });
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.UserRole", b =>
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.UserRole", b =>
                 {
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
@@ -219,7 +219,7 @@ namespace GameStore.WebAPI.Migrations
                     b.ToTable("UserRole", (string)null);
                 });
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.UserToken", b =>
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.UserToken", b =>
                 {
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
@@ -552,51 +552,51 @@ namespace GameStore.WebAPI.Migrations
                     b.ToTable("Reviews");
                 });
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.RoleClaim", b =>
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.RoleClaim", b =>
                 {
-                    b.HasOne("Biblioteca.Entities.MicrosoftIdentity.Role", null)
+                    b.HasOne("GameStore.Entities.MicrosoftIdentity.Role", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.UserClaim", b =>
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.UserClaim", b =>
                 {
-                    b.HasOne("Biblioteca.Entities.MicrosoftIdentity.User", null)
+                    b.HasOne("GameStore.Entities.MicrosoftIdentity.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.UserLogin", b =>
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.UserLogin", b =>
                 {
-                    b.HasOne("Biblioteca.Entities.MicrosoftIdentity.User", null)
+                    b.HasOne("GameStore.Entities.MicrosoftIdentity.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.UserRole", b =>
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.UserRole", b =>
                 {
-                    b.HasOne("Biblioteca.Entities.MicrosoftIdentity.Role", null)
+                    b.HasOne("GameStore.Entities.MicrosoftIdentity.Role", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Biblioteca.Entities.MicrosoftIdentity.User", null)
+                    b.HasOne("GameStore.Entities.MicrosoftIdentity.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Biblioteca.Entities.MicrosoftIdentity.UserToken", b =>
+            modelBuilder.Entity("GameStore.Entities.MicrosoftIdentity.UserToken", b =>
                 {
-                    b.HasOne("Biblioteca.Entities.MicrosoftIdentity.User", null)
+                    b.HasOne("GameStore.Entities.MicrosoftIdentity.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

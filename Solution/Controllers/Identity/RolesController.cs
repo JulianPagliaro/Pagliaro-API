@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Biblioteca.Application.Dtos.Identity.Roles;
+using GameStore.Application.Dtos.Identity.Roles;
 using GameStore.Entities.MicrosoftIdentity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -53,6 +53,7 @@ namespace GameStore.WebAPI.Controllers.Identity
                     try
                     {
                         var role = _mapper.Map<Role>(roleRequestDto);
+                        role.Id = Guid.NewGuid();
                         var result = _roleManager.CreateAsync(role).Result;
                         if (result.Succeeded)
                         {

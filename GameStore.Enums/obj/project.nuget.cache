@@ -1,12 +1,18 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "HVIsqZqM7YU=",
-=======
-  "dgSpecHash": "XYF0qSny66o=",
->>>>>>> b03ed2f33c3499e2380dcc98490d90601ea37243
   "success": true,
   "projectFilePath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Enums\\GameStore.Enums.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "message": "Problema al leer el archivo de caché C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Enums\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
+      "projectPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Enums\\GameStore.Enums.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\GameStore.Enums\\GameStore.Enums.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

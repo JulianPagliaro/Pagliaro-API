@@ -1,7 +1,12 @@
 ﻿using AutoMapper;
 using GameStore.Application;
+using GameStore.Application.Dtos.Editor;
 using GameStore.Application.Dtos.Pais;
 using GameStore.Entities;
+using GameStore.Entities.MicrosoftIdentity;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Components.Forms;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GameStore.WebAPI.Controllers
@@ -10,27 +15,40 @@ namespace GameStore.WebAPI.Controllers
     [ApiController]
     public class PaisesController : ControllerBase
     {
+        private readonly UserManager<User> _userManager;
         private readonly ILogger<PaisesController> _logger;
         private readonly IApplication<Pais> _paisApp;
         private readonly IMapper _mapper;
 
-        public PaisesController(ILogger<PaisesController> logger, IApplication<Pais> paisApp, IMapper mapper)
+        public PaisesController(ILogger<PaisesController> logger, UserManager<User> userManager, IApplication<Pais> paisApp, IMapper mapper)
         {
             _logger = logger;
             _paisApp = paisApp;
             _mapper = mapper;
+            _userManager = userManager;
         }
 
         [HttpGet]
         [Route("All")]
+        [Authorize(Roles = "Admin, Client")]
         public async Task<IActionResult> All()
         {
-            var paises = _paisApp.GetAll();
-            return Ok(_mapper.Map<IList<PaisResponseDto>>(paises));
+
+            var id = User.FindFirst("Id").Value.ToString();
+            var user = _userManager.FindByIdAsync(id).Result;
+            if (_userManager.IsInRoleAsync(user, "Admin").Result)
+            {
+                var name = User.FindFirst("name");
+                var a = User.Claims;
+                return Ok(_mapper.Map<IList<PaisResponseDto>>(_paisApp.GetAll()));
+            }
+            return Unauthorized();
         }
 
         [HttpGet]
         [Route("ById")]
+        [Authorize(Roles = "Admin, Client")]
+
         public async Task<IActionResult> ById(int? Id)
         {
             if (!Id.HasValue)
@@ -48,6 +66,8 @@ namespace GameStore.WebAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Crear(PaisRequestDto paisRequestDto)
         {
             if (!ModelState.IsValid)
@@ -61,6 +81,8 @@ namespace GameStore.WebAPI.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Editar(int? Id, PaisRequestDto paisRequestDto)
         {
             if (!Id.HasValue)
@@ -88,6 +110,8 @@ namespace GameStore.WebAPI.Controllers
         }
 
         [HttpDelete]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Borrar(int? Id)
         {
             if (!Id.HasValue)

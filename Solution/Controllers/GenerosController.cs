@@ -2,7 +2,10 @@
 using GameStore.Application;
 using GameStore.Application.Dtos.Genero;
 using GameStore.Entities;
+using GameStore.Entities.MicrosoftIdentity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GameStore.WebAPI.Controllers
@@ -11,28 +14,40 @@ namespace GameStore.WebAPI.Controllers
     [ApiController]
     public class GenerosController : ControllerBase
     {
+        private readonly UserManager<User> _userManager;
         private readonly ILogger<GenerosController> _logger;
         private readonly IApplication<Genero> _genero;
         private readonly IMapper _mapper;
 
-        public GenerosController(ILogger<GenerosController> logger, IApplication<Genero> genero, IMapper mapper)
+        public GenerosController(ILogger<GenerosController> logger, UserManager<User> userManager, IApplication<Genero> genero, IMapper mapper)
         {
             _logger = logger;
             _genero = genero;
             _mapper = mapper;
+            _userManager = userManager;
         }
 
         [HttpGet]
         [Route("All")]
+        [Authorize(Roles = "Admin, Client")]
+
         public async Task<IActionResult> All()
         {
-            var generos = _genero.GetAll();
-            var response = _mapper.Map<IList<GeneroResponseDto>>(generos);
-            return Ok(response);
+            var id = User.FindFirst("Id").Value.ToString();
+            var user = _userManager.FindByIdAsync(id).Result;
+            if (_userManager.IsInRoleAsync(user, "Administrador").Result)
+            {
+                var name = User.FindFirst("name");
+                var a = User.Claims;
+                return Ok(_mapper.Map<IList<GeneroResponseDto>>(_genero.GetAll()));
+            }
+            return Unauthorized();
         }
 
         [HttpGet]
         [Route("ById")]
+        [Authorize(Roles = "Admin, Client")]
+
         public async Task<IActionResult> ById(int? id)
         {
             if (!id.HasValue)
@@ -47,6 +62,8 @@ namespace GameStore.WebAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Crear([FromBody] GeneroRequestDto generoRequestDto)
         {
             if (!ModelState.IsValid)
@@ -58,6 +75,8 @@ namespace GameStore.WebAPI.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Editar(int? Id, GeneroRequestDto generoRequestDto)
         {
             if (!Id.HasValue)
@@ -89,6 +108,8 @@ namespace GameStore.WebAPI.Controllers
         }
 
         [HttpDelete]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Borrar(int? id)
         {
             if (!id.HasValue)

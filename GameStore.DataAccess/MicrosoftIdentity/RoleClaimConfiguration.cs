@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Biblioteca.DataAccess.EntityConfigurations.MicrosoftIdentity
+namespace GameStore.DataAccess.EntityConfigurations.MicrosoftIdentity
 {
     public class RoleClaimConfiguration : IEntityTypeConfiguration<RoleClaim>
     {

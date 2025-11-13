@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "h6jWw6r7V18=",
-=======
-  "dgSpecHash": "h4ymhbwdmck=",
->>>>>>> b03ed2f33c3499e2380dcc98490d90601ea37243
   "success": true,
   "projectFilePath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj",
   "expectedPackageFiles": [
@@ -22,5 +18,15 @@
     "C:\\Users\\Redmo\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\Redmo\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.6\\system.diagnostics.diagnosticsource.9.0.6.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "message": "Problema al leer el archivo de caché C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution.Entities\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
+      "projectPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution.Entities\\GameStore.Entities.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

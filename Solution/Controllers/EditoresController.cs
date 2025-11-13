@@ -30,11 +30,12 @@ namespace GameStore.WebAPI.Controllers
 
         [HttpGet]
         [Route("All")]
+        [Authorize(Roles = "Admin, Client")]
         public async Task<IActionResult> All()
         {
             var id = User.FindFirst("Id").Value.ToString();
             var user = _userManager.FindByIdAsync(id).Result;
-            if (_userManager.IsInRoleAsync(user, "Administrador").Result)
+            if (_userManager.IsInRoleAsync(user, "Admin").Result)
             {
                 var name = User.FindFirst("name");
                 var a = User.Claims;
@@ -45,6 +46,8 @@ namespace GameStore.WebAPI.Controllers
 
         [HttpGet]
         [Route("ById")]
+        [Authorize(Roles = "Admin, Client")]
+
         public async Task<IActionResult> ById(int? Id)
         {
             if (!Id.HasValue)
@@ -60,16 +63,23 @@ namespace GameStore.WebAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Crear(EditorRequestDto editorRequestDto)
         {
             if (!ModelState.IsValid)
-            { return BadRequest(); }
+            { 
+                return BadRequest(); 
+            }
+
             var artista = _mapper.Map<Editor>(editorRequestDto);
             _editor.Save(artista);
             return Ok(artista.Id);
         }
 
         [HttpPut]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Editar(int? Id, EditorRequestDto artistaRequestDto)
         {
             if (!Id.HasValue)
@@ -101,6 +111,8 @@ namespace GameStore.WebAPI.Controllers
         }
 
         [HttpDelete]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Borrar(int? Id)
         {
             if (!Id.HasValue)
