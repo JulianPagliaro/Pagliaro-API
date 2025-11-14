@@ -3,19 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution\\mapping\\paismappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:mapping\\paismappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DBD55FE-62BA-429F-BBA2-4ADC0B46D283}|..\\Solution.Entities\\GameStore.Entities.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution.entities\\pais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution\\controllers\\paisescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:controllers\\paisescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution\\controllers\\identity\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:controllers\\identity\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution\\mapping\\editormappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:mapping\\editormappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,53 +95,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PaisMappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Mapping\\PaisMappingProfile.cs",
-              "RelativeDocumentMoniker": "Mapping\\PaisMappingProfile.cs",
-              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Mapping\\PaisMappingProfile.cs",
-              "RelativeToolTip": "Mapping\\PaisMappingProfile.cs",
+              "Title": "EditorMappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Mapping\\EditorMappingProfile.cs",
+              "RelativeDocumentMoniker": "Mapping\\EditorMappingProfile.cs",
+              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Mapping\\EditorMappingProfile.cs",
+              "RelativeToolTip": "Mapping\\EditorMappingProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T00:37:06.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Pais.cs",
-              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution.Entities\\Pais.cs",
-              "RelativeDocumentMoniker": "..\\Solution.Entities\\Pais.cs",
-              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution.Entities\\Pais.cs",
-              "RelativeToolTip": "..\\Solution.Entities\\Pais.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T00:36:35.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PaisesController.cs",
-              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\PaisesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PaisesController.cs",
-              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\PaisesController.cs",
-              "RelativeToolTip": "Controllers\\PaisesController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T00:31:37.294Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RolesController.cs",
-              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\Identity\\RolesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\Identity\\RolesController.cs",
-              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\Identity\\RolesController.cs",
-              "RelativeToolTip": "Controllers\\Identity\\RolesController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T00:23:45.868Z",
+              "WhenOpened": "2025-11-14T00:57:29.96Z",
               "EditorCaption": ""
             }
           ]
