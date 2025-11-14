@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using GameStore.Application.Dtos.Pais;
-using GameStore.Application.Dtos.Review;
 using GameStore.Entities;
 
 namespace GameStore.WebAPI.Mapping
@@ -9,9 +8,9 @@ namespace GameStore.WebAPI.Mapping
     {
         public PaisMappingProfile()
         {
-            CreateMap<Review, PaisResponseDto>();
+            CreateMap<Pais, PaisResponseDto>();
 
-            CreateMap<PaisRequestDto, Review>();
+            CreateMap<PaisRequestDto, Pais>();
         }
     }
 }

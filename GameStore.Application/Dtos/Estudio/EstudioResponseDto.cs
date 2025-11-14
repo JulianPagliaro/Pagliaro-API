@@ -12,5 +12,6 @@ namespace GameStore.Application.Dtos.Estudio
         public int Id { get; set; }
         public string Nombre { get; set; }
         public DateTime FechaFundacion { get; set; }
+        public int IdPais { get; set; }
     }
 }

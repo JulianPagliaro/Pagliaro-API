@@ -15,5 +15,7 @@ namespace GameStore.Application.Dtos.Estudio
 
         [DataType(DataType.Date)]
         public DateTime FechaFundacion { get; set; }
+        public int IdPais { get; set; }
+
     }
 }

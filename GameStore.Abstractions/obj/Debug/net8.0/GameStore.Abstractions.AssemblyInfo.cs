@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GameStore.Abstractions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5440eb8648e55922133a052a009be711e8afa655")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6249922b4aab50211e709ed53f9d6312eae9c688")]
 [assembly: System.Reflection.AssemblyProductAttribute("GameStore.Abstractions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GameStore.Abstractions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
