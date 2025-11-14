@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,8 @@ namespace GameStore.Entities
 
         [DataType(DataType.Date)]
         public DateTime FechaFundacion { get; private set; }
+        [ForeignKey(nameof(Pais))]
+
         public int IdPais { get; set; }
         #endregion
         #region propiedades virtuales

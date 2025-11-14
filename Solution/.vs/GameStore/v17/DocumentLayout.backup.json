@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution\\mapping\\editormappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:mapping\\editormappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|c:\\users\\redmo\\source\\repos\\pagliaro-api\\solution\\controllers\\estudioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA3346B-AE33-46C5-97A4-D9D3D5599740}|GameStore.WebAPI.csproj|solutionrelative:controllers\\estudioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -95,14 +95,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EditorMappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Mapping\\EditorMappingProfile.cs",
-              "RelativeDocumentMoniker": "Mapping\\EditorMappingProfile.cs",
-              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Mapping\\EditorMappingProfile.cs",
-              "RelativeToolTip": "Mapping\\EditorMappingProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "EstudiosController.cs",
+              "DocumentMoniker": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\EstudiosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EstudiosController.cs",
+              "ToolTip": "C:\\Users\\Redmo\\source\\repos\\Pagliaro-API\\Solution\\Controllers\\EstudiosController.cs",
+              "RelativeToolTip": "Controllers\\EstudiosController.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T00:57:29.96Z",
+              "WhenOpened": "2025-11-14T01:12:20.418Z",
               "EditorCaption": ""
             }
           ]
